@@ -1,3 +1,6 @@
+.badge{
+  color:red !important;
+}
 .hero-section {
     background-color: #333; /* Fallback background color */
     min-height: 80vh;
