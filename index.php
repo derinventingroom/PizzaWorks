@@ -9,7 +9,7 @@
       
             <!-- Right Side: Text and CTA -->
             <div class="col-lg-6 text-light text-end">
-              <h1 class="display-4 fw-bold">Test for github Welcome to Pizzaworks</h1>
+              <h1 class="display-4 fw-bold">Welcome to Pizzaworks</h1>
               <p class="lead">Where every slice is a masterpiece!</p>
               <a href="#menu" class="btn btn-primary btn-lg mt-3">Explore Our Menu</a>
             </div>
