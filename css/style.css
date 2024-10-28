@@ -1,0 +1,70 @@
+.hero-section {
+    background-color: #333; /* Fallback background color */
+    min-height: 80vh;
+    padding: 30px 0;
+  }
+  
+  .hero-image {
+    border-radius: 10px;
+    /* Optional shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary {
+    background-color: #ff6347; /* Tomato color */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e55337; /* Darker shade for hover */
+  }
+  .special-offers-section {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .carousel-item {
+    min-height: 400px; /* Set a minimum height for the carousel */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px; /* Padding around caption */
+    border-radius: 5px; /* Rounded corners for caption */
+  }
+
+  .popular-pizzas-section {
+    background-color: #ffffff; /* White background for a clean look */
+  }
+  
+  .card {
+    border: none; /* Remove default border */
+    transition: transform 0.2s; /* Smooth scaling effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+  }
+  
+  .card-img-top {
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+
+  /**MENU */
+  .menu-section {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .card {
+    border: none; /* Remove default border */
+    transition: transform 0.2s; /* Smooth scaling effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+  }
+  
+  .card-img-top {
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+    
