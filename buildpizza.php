@@ -54,7 +54,7 @@
             <input type="tel" id="phone" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit Order</button>
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
     </form>
 
     <div id="order-summary" class="mt-4"></div>

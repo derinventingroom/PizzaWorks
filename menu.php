@@ -9,6 +9,25 @@
           <h3 class="my-4">Pizzas</h3>
           <div class="row">
             <!-- Pizza Item 1 -->
+            <div class="col-md-12 mb-12">
+              <div class="card">
+                <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
+                <div class="card-body">
+                  <h5 class="card-title">Build Your Own</h5>
+                  <p class="card-text">Classic cheese pizza with fresh basil.</p>
+                  <p class="fw-bold">$12.99</p>
+                  <a href="buildpizza.php" class="btn btn-primary">Cuztomize</a>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <h3 class="my-4">Pizzas</h3>
+          <div class="row">
+            <!-- Pizza Item 1 -->
             <div class="col-md-4 mb-4">
               <div class="card">
                 <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
