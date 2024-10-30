@@ -69,5 +69,18 @@
   .card-img-top {
     border-radius: 10px; /* Rounded corners for the image */
   }
+
+  /* Cart */
+  .cart-item-style{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  /* Coupon Section */
+  .coupon-section{
+    background-color: #f8f9fa !important;
+  }
   
     

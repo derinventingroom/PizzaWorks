@@ -16,7 +16,7 @@
                   <h5 class="card-title">Build Your Own</h5>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
                   <p class="fw-bold">$12.99</p>
-                  <a href="buildpizza.php" class="btn btn-primary">Cuztomize</a>
+                  <a href="buildpizza.php" class="btn btn-primary">Customize</a>
                 </div>
               </div>
             </div>
