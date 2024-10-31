@@ -34,7 +34,7 @@
                 <div class="carousel-caption">
                   <h5 class="fw-bold">Family Feast</h5>
                   <p>Get 2 large pizzas, 1 garlic bread, and a 2-liter soda for just $29.99!</p>
-                  <a href="#" class="btn btn-primary">Order Now</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Family Feast" data-price="29.99">Order Now</a>
                 </div>
               </div>
             </div>

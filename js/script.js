@@ -41,10 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 totalPrice = 0;
             }
 
-            // Display coupon info
+            // Display coupon info with a remove button
             cartItemsContainer.innerHTML += `
                 <div class="coupon-applied">
                     <p>Coupon Applied: ${appliedCoupon.description}</p>
+                    <button class="remove-coupon btn btn-warning btn-sm">X</button>
                 </div>
             `;
         }
@@ -69,6 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
             updateCartDisplay(); // Refresh the cart display
             updateCartCount(); // Update the cart count immediately
+        }
+    });
+
+    // Event listener for removing the applied coupon
+    document.addEventListener('click', (event) => {
+        if (event.target.classList.contains('remove-coupon')) {
+            localStorage.removeItem('appliedCoupon'); // Remove coupon from localStorage
+            updateCartDisplay(); // Update cart display to reflect coupon removal
+            alert('Coupon removed!');
         }
     });
 
