@@ -4,13 +4,13 @@
           <div class="row">
             <!-- Left Side: Image -->
             <div class="col-lg-6 d-none d-lg-block">
-              <img src="path-to-pizza-image.jpg" alt="Delicious Pizza" class="img-fluid hero-image">
+              <!-- <img src="path-to-pizza-image.jpg" alt="Delicious Pizza" class="img-fluid hero-image"> -->
             </div>
       
             <!-- Right Side: Text and CTA -->
-            <div class="col-lg-6 text-light text-end">
-              <h1 class="display-4 fw-bold">Welcome to Pizzaworks</h1>
-              <p class="lead">Where every slice is a masterpiece!</p>
+            <div class="hero-right-cta col-lg-6 text-light text-end">
+              <h1 class="display-4 fw-bold">Craft Your Perfect Pizza at Pizzaworks!</h1>
+              <p class="lead">Handcrafted ingredients. Endless combinations.</p>
               <a href="menu.php" class="btn btn-primary btn-lg mt-3">Explore Our Menu</a>
             </div>
           </div>

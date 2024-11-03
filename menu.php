@@ -65,6 +65,48 @@
             </div>
           </div>
         </div>
+
+        <div class="col-md-12">
+          <h3 class="my-4">Pizzas</h3>
+          <div class="row">
+            <!-- Pizza Item 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
+                <div class="card-body">
+                  <h5 class="card-title">Margherita Pizza</h5>
+                  <p class="card-text">Classic cheese pizza with fresh basil.</p>
+                  <p class="fw-bold">$12.99</p>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Pizza Item 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="path-to-pizza-image-2.jpg" class="card-img-top" alt="Pepperoni Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">Pepperoni Pizza</h5>
+                  <p class="card-text">A favorite topped with spicy pepperoni.</p>
+                  <p class="fw-bold">$14.99</p>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Pepperoni Pizza" data-price="14.99">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Pizza Item 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="path-to-pizza-image-3.jpg" class="card-img-top" alt="Veggie Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">Veggie Pizza</h5>
+                  <p class="card-text">Loaded with fresh vegetables and cheese.</p>
+                  <p class="fw-bold">$13.99</p>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Veggie Pizza" data-price="13.99">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   
         <!-- Sides Category -->
         <div class="col-md-12">
