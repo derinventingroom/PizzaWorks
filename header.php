@@ -33,9 +33,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="coupons.php">Deals</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="cart.php" class="btn btn-outline-secondary">
                 <i class="fas fa-shopping-cart"></i>
@@ -45,4 +45,4 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> 
