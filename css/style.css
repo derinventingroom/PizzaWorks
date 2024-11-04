@@ -13,6 +13,61 @@
   background-color: #e55337;
 }
 
+.light-blue-background{
+  background-color: #ffe4b1;
+}
+
+.section-header-container{
+  display: flex;
+  justify-content: center;
+  /* margin-top: -9%; */
+}
+
+/* .section-header{
+  background-color: #e70e02;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  padding: 30px;
+  color: #fff;
+  border-radius: 20px;
+} */
+
+/* .navbar {
+  color: #000000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  color: #000000;
+}
+
+.navbar a:hover {
+  color: #ffbf46 !important;
+} */
+
+.navbar-home {
+  background-color: transparent !important;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-home a {
+  color: #ffffff !important;
+}
+
+.navbar-home a:hover {
+  color: #ffbf46 !important;
+}
+
+
 /* HERO */
 .hero-section {
   background-image: url('../images/home-hero.webp');
@@ -38,7 +93,7 @@
   }
 
   .special-offers-section {
-    background-color: #f8f9fa; /* Light background */
+
   }
   
   .carousel-item {
@@ -49,6 +104,11 @@
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
     padding: 20px; /* Padding around caption */
     border-radius: 5px; /* Rounded corners for caption */
+  }
+
+  .carousel-item img {
+    object-fit: cover; /* Ensure the image fills its area */
+    height: 100%; /* Make sure it takes up the full height of the container */
   }
 
   .popular-pizzas-section {

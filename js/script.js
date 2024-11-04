@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+        // Check if the current page is the home page
+        if (window.location.pathname === "/" || window.location.pathname === "/index.php") {
+            // Add the 'navbar-home' class to make the navbar transparent on the home page
+            const navbar = document.querySelector(".navbar");
+            if (navbar) {
+                navbar.classList.add("navbar-home");
+            }
+        }
     // Get the cart from local storage or initialize it
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
