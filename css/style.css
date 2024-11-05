@@ -99,11 +99,43 @@
   .carousel-item {
     min-height: 400px; /* Set a minimum height for the carousel */
   }
+
+  .carousel-item .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
     padding: 20px; /* Padding around caption */
     border-radius: 5px; /* Rounded corners for caption */
+  }
+  .carousel-bg-image-1, .carousel-bg-image-2, .carousel-bg-image-3{
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 80vh;
+    padding: 30px 0;
+  }
+  .carousel-bg-image-1{
+    background-image: url('../images/family-feast-deal.jpg');
+  }
+  .carousel-bg-image-2{
+    background-image: url('../images/pizza-salad-combo-deal.jpg');
+  }
+  .carousel-bg-image-3{
+    background-image: url('../images/lunch-special-deal.jpg');
+  }
+  .carousel-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }
+
+  .carousel-description .carousel-description-style{
+    background-color: #fff;
+    padding: 30px;
   }
 
   .carousel-item img {
