@@ -4,7 +4,7 @@
       <div class="row">
         <!-- Left Side: Image -->
         <div class="col-lg-6 d-none d-lg-block">
-          <!-- <img src="path-to-pizza-image.jpg" alt="Delicious Pizza" class="img-fluid hero-image"> -->
+          <img src="images\hero-pizza.png" alt="Delicious Pizza" class="img-fluid hero-image">
         </div>
   
         <!-- Right Side: Text and CTA -->
@@ -28,7 +28,8 @@
             <p class="lead text-center">Delicious deals just for you!</p>
         </div>
       </div> -->
-      <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel" >
+      <!-- <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel" > -->
+      <div id="offersCarousel" class="carousel slide"> 
          <div class="carousel-inner">
           <!-- Offer 1 -->
           <div class="carousel-item active">
