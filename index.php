@@ -37,9 +37,9 @@
               <div class="carousel-bg-image-1"></div>
               <div class="carousel-description">
                 <div class="carousel-description-style">
-                  <h5 class="fw-bold">Family Feast</h5>
+                  <h3 class="fw-bold">Family Feast</h3>
                   <p>Get 2 large pizzas, 1 garlic bread, and a 2-liter soda for just $29.99!</p>
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Family Feast" data-price="29.99">Order Now</a>
+                  <a href="#" class="add-to-cart yellow-bg btn btn-primary" data-name="Family Feast" data-price="29.99">Order Now</a>
                 </div>
               </div>
             </div>
@@ -51,9 +51,9 @@
               <div class="carousel-bg-image-2"></div>
               <div class="carousel-description">
                 <div class="carousel-description-style">
-                  <h5 class="fw-bold">Pizza & Salad Combo</h5>
+                  <h3 class="fw-bold">Pizza & Salad Combo</h3>
                   <p>Enjoy a large pizza and a fresh salad for only $19.99!</p>
-                  <a href="#" class="btn btn-primary">Order Now</a>
+                  <a href="#" class="btn yellow-bg btn-primary">Order Now</a>
                 </div>
               </div>
             </div>
@@ -65,9 +65,9 @@
               <div class="carousel-bg-image-3"></div>
               <div class="carousel-description">
                 <div class="carousel-description-style">
-                  <h5 class="fw-bold">Lunch Special</h5>
+                  <h3 class="fw-bold">Lunch Special</h3>
                   <p>Any personal pizza and a drink for just $9.99 from 11 AM to 3 PM!</p>
-                  <a href="#" class="btn btn-primary">Order Now</a>
+                  <a href="#" class="btn yellow-bg btn-primary">Order Now</a>
                 </div>
               </div>
             </div>
@@ -86,8 +86,9 @@
       </div>
     </div>
   </section>
+
   <section id="popular-pizzas" class="popular-pizzas-section py-5">
-    <div class="container">
+    
     <div class="section-header-container">
       <div class="section-header">
         <h2 class="display-4 fw-bold text-center">Popular Pizzas</h2>
@@ -99,7 +100,7 @@
         <!-- Pizza Card 1 -->
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza">
+            <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
             <div class="card-body text-center">
               <h5 class="card-title">Margherita Pizza</h5>
               <p class="card-text">Classic cheese pizza with fresh basil.</p>
@@ -111,7 +112,7 @@
         <!-- Pizza Card 2 -->
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="path-to-pizza-image-2.jpg" class="card-img-top" alt="Pepperoni Pizza">
+            <img src="images/pepperoni-pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
             <div class="card-body text-center">
               <h5 class="card-title">Pepperoni Pizza</h5>
               <p class="card-text">A favorite topped with spicy pepperoni.</p>
@@ -123,7 +124,7 @@
         <!-- Pizza Card 3 -->
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="path-to-pizza-image-3.jpg" class="card-img-top" alt="Veggie Pizza">
+            <img src="images/Veggie-Pizza.jpg" class="card-img-top" alt="Veggie Pizza">
             <div class="card-body text-center">
               <h5 class="card-title">Veggie Pizza</h5>
               <p class="card-text">Loaded with fresh vegetables and cheese.</p>
@@ -132,7 +133,7 @@
           </div>
         </div>
       </div>
-    </div>
+   
   </section>
   <?php include 'footer.php'; ?>
   

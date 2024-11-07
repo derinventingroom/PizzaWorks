@@ -25,7 +25,7 @@
         </div>
 
         <div class="col-md-12">
-          <h3 class="my-4">Pizzas</h3>
+    
           <div class="row">
             <!-- Pizza Item 1 -->
             <div class="col-md-4 mb-4">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-md-12">
-          <h3 class="my-4">Pizzas</h3>
+  
           <div class="row">
             <!-- Pizza Item 1 -->
             <div class="col-md-4 mb-4">
