@@ -89,48 +89,63 @@
 
   <section id="popular-pizzas" class="popular-pizzas-section py-5">
     
-    <div class="section-header-container">
+    <!-- <div class="section-header-container">
       <div class="section-header">
         <h2 class="display-4 fw-bold text-center">Popular Pizzas</h2>
         <p class="lead text-center">Our most loved pizzas by customers!</p>
       </div>
-    </div>
+    </div> -->
   
       <div class="row">
-        <!-- Pizza Card 1 -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
-            <div class="card-body text-center">
-              <h5 class="card-title">Margherita Pizza</h5>
-              <p class="card-text">Classic cheese pizza with fresh basil.</p>
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
+       <div class="pop-pizza-header col-md-3">
+          <div class="card mb-lg-0 mb-4">
+          <div class="section-header">
+            <h2 class="display-4 fw-bold text-center">Popular Pizzas</h2>
+            <p class="lead text-center">Our most loved pizzas by customers!</p>
+           </div>
           </div>
         </div>
+        
+        <!-- Pizza Card 1 -->
+        <div class="col-md-3">
+          <div class="card mb-lg-0 mb-4">
+            <div class="popular-pizza-block">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
+              <div class="popular-pizza-block-bottom">
+                <p class="card-text">Classic cheese pizza with fresh basil.</p>
+                <a href="#" class="yellow-bg btn btn-primary">Order Now</a>
+              </div>
+             </div>
+            </div>
+         </div>
   
         <!-- Pizza Card 2 -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/pepperoni-pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
-            <div class="card-body text-center">
+        <div class="col-md-3">
+          <div class="card mb-lg-0 mb-4">
+            <div class="popular-pizza-block">   
               <h5 class="card-title">Pepperoni Pizza</h5>
-              <p class="card-text">A favorite topped with spicy pepperoni.</p>
-              <a href="#" class="btn btn-primary">Order Now</a>
+              <img src="images/pepperoni-pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
+              <div class="popular-pizza-block-bottom">
+                <p class="card-text">A favorite topped with spicy pepperoni.</p>
+                <a href="#" class="yellow-bg btn btn-primary">Order Now</a>
+              </div>
             </div>
-          </div>
+            </div>
         </div>
   
         <!-- Pizza Card 3 -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="images/Veggie-Pizza.jpg" class="card-img-top" alt="Veggie Pizza">
-            <div class="card-body text-center">
-              <h5 class="card-title">Veggie Pizza</h5>
-              <p class="card-text">Loaded with fresh vegetables and cheese.</p>
-              <a href="#" class="btn btn-primary">Order Now</a>
+        <div class="col-md-3">
+          <div class="card mb-lg-0 mb-4">
+            <div class="popular-pizza-block">  
+                <h5 class="card-title">Veggie Pizza</h5>
+                <img src="images/veggie-pizza-v2.jpg" class="card-img-top" alt="Veggie Pizza">
+                <div class="popular-pizza-block-bottom">
+                  <p class="card-text">Loaded with fresh vegetables and cheese.</p>
+                  <a href="#" class="yellow-bg btn btn-primary">Order Now</a>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
    
