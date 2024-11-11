@@ -6,8 +6,10 @@
 
 
 p{
-  font-size: 19px;
-  color: #03567c;
+  font-family: "open-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
 }
 
 .btn-primary {
@@ -23,20 +25,24 @@ p{
 
 .yellow-bg.btn-primary{
   border-radius: 30px !important;
-  background-color: #fff;
-  border: 3px solid #000;
-  color: #000;
-  box-shadow: 6px 6px 0px 1px #000;
+  background-color: #fff !important;
+  border: 3px solid #000 !important;
+  color: #000 !important;
+  box-shadow: 6px 6px 0px 1px #000 !important;
 }
 
 .yellow-bg.btn-primary:hover{
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .light-blue-background{
   background-color: #ffe4b1;
 }
+/***HOME***/
 
+.pop-pizza-header .card{
+  background-color: transparent;
+}
 .section-header-container{
   display: flex;
   justify-content: center;
@@ -90,11 +96,12 @@ p{
 
 /* HERO */
 .hero-section {
-  background-image: url('../images/home-hero.webp');
+  background-image: url('../images/home-hero-v2.jpg');
+  background-color: #ffbf46;
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
-  border-bottom: 10px solid #f42b03;
+  border-bottom: 10px solid #a1363a;
   min-height: 80vh;
   padding: 30px 0;
 }
@@ -108,10 +115,13 @@ p{
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
  }
 
-  .hero-right-cta h1{
-    color: #ffbf46 !important;
+  .hero-section h1{
+    color: #42846d !important;
+    font-family: "peachy-keen-jf", sans-serif;
+font-weight: 400;
+font-style: normal;
   }
-  .hero-right-cta .btn-primary{
+  .hero-section .btn-primary{
     border-radius: 30px !important;
     background-color: #ffbf46;
     border: 3px solid #000;
@@ -120,11 +130,11 @@ p{
     width: 100%;
   }
 
-  .hero-right-cta .btn-primary:hover{
+  .hero-section .btn-primary:hover{
     box-shadow: none;
   }
   
-  .hero-right-cta .lead{
+  .hero-section .lead{
     color: #fff !important;
     font-weight: 500;
   }
@@ -137,13 +147,19 @@ p{
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-image: url('../images/carousel-bg-graphic-oraange-red-smaller.jpg'); 
+    background-image: url('../images/checkerboard-red-bg-graphic.jpg'); 
     min-height: 8vh;
     padding: 30px 0;
   }
+
+  .carousel{
+    border-top: 10px solid #a1363a;
+    /* border-bottom: 10px solid #f42b03; */
+  }
   
   .carousel-item {
-    min-height: 400px; /* Set a minimum height for the carousel */
+    /* min-height: 400px;  */
+    /* Set a minimum height for the carousel */
   }
 
   .carousel-item h3{
@@ -214,11 +230,17 @@ p{
   }
 
   .popular-pizzas-section {
-    background-color: #ffffff; /* White background for a clean look */
+    background-color: #75dbcd;
+    border-top: 10px solid #a1363a;
+    border-bottom: 10px solid #a1363a;
   }
 
   .popular-pizzas-section .row{
     padding: 30px;
+  }
+
+  .popular-pizzas-section .card{
+    border-radius: 20px;
   }
   
   .card {
@@ -235,12 +257,26 @@ p{
   }
 
   .popular-pizzas-section .card-title{
-    position: absolute;
+    /* position: absolute;
     font-family: "interstate-condensed", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
-    width: 100%;
+    font-size: 2rem;
+    z-index: 1; */
+    /* text-align: center;
+    width: 100%; */
+  }
+
+  .popular-pizzas-section .card-title{
+    position: absolute;
+    padding: 20px;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
+    border-radius: 30px !important;
+    background-color: #fff;
+    border: 3px solid #000;
+    color: #000;
+    box-shadow: 6px 6px 0px 1px #000;
   }
 
   .pop-pizza-header{
@@ -256,15 +292,44 @@ p{
     border: 4px solid #000;
   }
 
-  .popular-pizza-block-bottom{
+  /* .popular-pizza-block-bottom{
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #ffbf46;
+    border-top: 4px solid #000;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 15px;
+    padding: 20px;
+  } */
+
+  .popular-pizza-block-bottom{
+    position: absolute;
+    bottom: 0;
+    /* left: 10%; */
+    background-color: #ffbf46;
+    padding: 20px;
+    /* border-radius: 20px; */
+    border-top: 4px solid #000;
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    column-gap: 34px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .popular-pizza-block-bottom .fa-pizza-slice{
+    /* color: #ffffff;
+    transform: rotate(230deg); */
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 10px;
+    border: 3px solid #000;
+    font-size: 20px;
   }
 
  /* .popular-pizza-block .card-text{
@@ -306,4 +371,7 @@ p{
     background-color: #f8f9fa !important;
   }
   
+  /***MENU***/
+
+
     

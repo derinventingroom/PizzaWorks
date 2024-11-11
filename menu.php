@@ -9,7 +9,7 @@
           <h3 class="my-4">Pizzas</h3>
           <div class="row">
             <!-- Pizza Item 1 -->
-            <div class="col-md-12 mb-12">
+            <div class="col-md-12 mb-12 col-md-4 mb-4">
               <div class="card">
                 <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
                 <div class="card-body">
