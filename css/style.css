@@ -118,8 +118,8 @@ p{
   .hero-section h1{
     color: #42846d !important;
     font-family: "peachy-keen-jf", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
   }
   .hero-section .btn-primary{
     border-radius: 30px !important;
@@ -163,12 +163,18 @@ font-style: normal;
   }
 
   .carousel-item h3{
-    color:#000;
-    font-family: "interstate-condensed", sans-serif;
-    font-size: 6rem;
+    color:#fff;
+    font-family: "peachy-keen-jf", sans-serif;
+    font-size: 3.5rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: -2px;
+  }
+
+  .carousel-item p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
   }
 
   .carousel-item .row{
@@ -201,7 +207,7 @@ font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffbf46;
+    background-color: #42846d;
     /* background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -230,7 +236,7 @@ font-style: normal;
   }
 
   .popular-pizzas-section {
-    background-color: #ffffff;
+    background-color: #fef7ea;
     border-top: 10px solid #a1363a;
     border-bottom: 10px solid #a1363a;
   }
@@ -273,15 +279,16 @@ font-style: normal;
     left: -25px;
     z-index: 1;
     border-radius: 30px !important;
-    background-color: #fff;
-    border: 3px solid #000;
-    color: #000;
-    box-shadow: 6px 6px 0px 1px #000;
+    background-color: #a2373b;
+    border: 3px solid #a2373b;
+    color: #fff;
+    font-family: "peachy-keen-jf", sans-serif;
+    box-shadow: 6px 6px 0px 1px #661c1f;
   }
 
   .pop-pizza-header{
     display: flex;
-    font-family: "interstate-condensed", sans-serif;
+    font-family: "peachy-keen-jf", sans-serif;
     justify-content: center;
     align-items: center;
   }
@@ -289,7 +296,7 @@ font-style: normal;
   .popular-pizza-block{
     position: relative;
     border-radius: 15px;
-    border: 4px solid #000;
+    border: 4px solid #42846d;
   }
 
   /* .popular-pizza-block-bottom{
@@ -307,11 +314,8 @@ font-style: normal;
   .popular-pizza-block-bottom{
     position: absolute;
     bottom: 0;
-    /* left: 10%; */
-    background-color: #ffbf46;
+    background-color: #42846d;
     padding: 20px;
-    /* border-radius: 20px; */
-    border-top: 4px solid #000;
     display: flex;
     line-height: 1;
     align-items: center;
@@ -332,13 +336,10 @@ font-style: normal;
     font-size: 20px;
   }
 
- /* .popular-pizza-block .card-text{
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    color: #fff;
-  } */
+ .popular-pizza-block .card-text strong{
+   font-family: "peachy-keen-jf", sans-serif;
+   font-size: 18px;
+  }
 
   /**MENU */
   .menu-section {

@@ -13,8 +13,7 @@
         <div class="container">
           <!-- Logo on the left -->
           <a class="navbar-brand" href="#">
-            <img src="path-to-your-logo.png" alt="" width="30" height="30" class="d-inline-block align-top">
-            Pizzaworks
+            <img src="images/pizza-logo.png" alt="PizzaWorks | Header Logo" width="30" height="30" class="d-inline-block align-top">
           </a>
       
           <!-- Navbar toggle for smaller screens -->
