@@ -3,17 +3,17 @@
     <div class="container">
       <div class="row">
         <!-- Left Side: Image -->
-        <!-- <div class="col-lg-6 d-none d-lg-block">
-          <img src="images\hero-pizza.png" alt="Delicious Pizza" class="img-fluid hero-image">
-        </div> -->
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image">
+        </div>
   
         <!-- Right Side: Text and CTA -->
-        <div class="hero-right-cta col-lg-12 text-light text-center">
-          <!-- <h1 class="display-4 fw-bold">Craft Your Perfect Pizza at Pizzaworks!</h1> -->
-          <img src="images/pizza-works-logo.png" alt="Delicious Pizza" class="img-fluid hero-image">
-          <!-- <h1 class="display-4 fw-bold">PizzaWorks!</h1>
-          <p class="lead">Handcrafted ingredients. Endless combinations.</p> -->
-          <!-- <a href="menu.php" class="btn yellow-bg btn-primary btn-lg mt-3">Explore Our Menu</a> -->
+        <div class="hero-right-cta col-lg-6 text-light text-center">
+          <h1 class="display-4 fw-bold">Craft Your Perfect Pizza at Pizzaworks!</h1>
+          <!-- <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image"> -->
+          <!-- <h1 class="display-4 fw-bold">PizzaWorks!</h1> -->
+          <p class="lead">Handcrafted ingredients. Endless combinations.</p> 
+          <a href="menu.php" class="btn btn-green btn-primary btn-lg mt-3">Explore Our Menu</a>
         </div>
       </div>
     </div>
@@ -66,12 +66,13 @@
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
                 </div>
                 <div>
-                  <!-- <a href="#" class="yellow-bg btn btn-primary">Order Now</a> -->
-                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                  <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
                 </div>
               </div>
             </div>
+            
             </div>
+            <a href="#" class="add-to-cart btn-red btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Order Now</a>
         </div>
          
   
@@ -91,12 +92,12 @@
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
                 </div>
                 <div>
-                  <!-- <a href="#" class="yellow-bg btn btn-primary">Order Now</a> -->
-                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                  <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
                 </div>
               </div>
             </div>
             </div>
+            <a href="#" class="btn-red btn btn-primary">Order Now</a>
         </div>
   
         <!-- Pizza Card 3 -->
@@ -114,12 +115,12 @@
                     <p class="card-text">Loaded with fresh vegetables and cheese.</p>
                   </div>
                   <div>
-                    <!-- <a href="#" class="yellow-bg btn btn-primary">Order Now</a> -->
-                    <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                    <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
                   </div>
                 </div>
               </div>
             </div>
+            <a href="#" class="btn-red btn btn-primary">Order Now</a>
         </div>
       </div>
    
@@ -146,7 +147,7 @@
                 <div class="carousel-description-style">
                   <h3 class="fw-bold">Family Feast</h3>
                   <p>Get 2 large pizzas, 1 garlic bread, and a 2-liter soda for just $29.99!</p>
-                  <a href="#" class="add-to-cart yellow-bg btn btn-primary" data-name="Family Feast" data-price="29.99">Order Now</a>
+                  <a href="#" class="add-to-cart btn-red btn btn-primary" data-name="Family Feast" data-price="29.99">Order Now</a>
                 </div>
               </div>
             </div>
@@ -160,7 +161,7 @@
                 <div class="carousel-description-style">
                   <h3 class="fw-bold">Pizza & Salad Combo</h3>
                   <p>Enjoy a large pizza and a fresh salad for only $19.99!</p>
-                  <a href="#" class="btn yellow-bg btn-primary">Order Now</a>
+                  <a href="#" class="btn btn-red btn-primary">Order Now</a>
                 </div>
               </div>
             </div>
@@ -174,7 +175,7 @@
                 <div class="carousel-description-style">
                   <h3 class="fw-bold">Lunch Special</h3>
                   <p>Any personal pizza and a drink for just $9.99 from 11 AM to 3 PM!</p>
-                  <a href="#" class="btn yellow-bg btn-primary">Order Now</a>
+                  <a href="#" class="btn btn-red btn-primary">Order Now</a>
                 </div>
               </div>
             </div>

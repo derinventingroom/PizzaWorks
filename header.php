@@ -12,8 +12,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <!-- Logo on the left -->
-          <a class="navbar-brand" href="#">
-            <img src="images/pizza-logo.png" alt="PizzaWorks | Header Logo" width="30" height="30" class="d-inline-block align-top">
+          <a class="navbar-brand" href="index.php">
+            <img src="images/pizza-works-animated-logo.gif" alt="PizzaWorks | Header Logo" width="130" class="d-inline-block align-top">
           </a>
       
           <!-- Navbar toggle for smaller screens -->

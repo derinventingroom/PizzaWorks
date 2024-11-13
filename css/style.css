@@ -23,15 +23,27 @@ p{
   background-color: #e55337;
 }
 
-.yellow-bg.btn-primary{
+.btn-red.btn-primary{
   border-radius: 30px !important;
-  background-color: #fff !important;
-  border: 3px solid #000 !important;
-  color: #000 !important;
-  box-shadow: 6px 6px 0px 1px #000 !important;
+  background-color: #a3373c !important;
+  border: 3px solid #a3373c !important;
+  color: #ffffff !important;
+  font-family: "peachy-keen-jf", sans-serif;
+  font-size: 22px;
+  box-shadow: 6px 6px 0px 1px #671c1f !important;
 }
 
-.yellow-bg.btn-primary:hover{
+.btn-green.btn-primary{
+  border-radius: 30px !important;
+  background-color: #5a826d !important;
+  border: 3px solid #5a826d !important;
+  color: #ffffff !important;
+  font-family: "peachy-keen-jf", sans-serif;
+  font-size: 22px;
+  box-shadow: 6px 6px 0px 1px #456a57 !important;
+}
+
+.btn-red:hover, .btn-green:hover{
   box-shadow: none !important;
 }
 
@@ -255,7 +267,7 @@ p{
   }
   
   .card:hover {
-    transform: scale(1.05); /* Slightly enlarge card on hover */
+    /* transform: scale(1.05);  */
   }
   
   .card-img-top {
@@ -341,6 +353,11 @@ p{
    font-size: 18px;
   }
 
+  .popular-pizzas-section .btn-red{
+    width: 100%;
+    margin-top: 15px;
+  }
+
   /**MENU */
   .menu-section {
     background-color: #f8f9fa; /* Light background */
@@ -352,7 +369,8 @@ p{
   }
   
   .card:hover {
-    transform: scale(1.05); /* Slightly enlarge card on hover */
+    /* transform: scale(1.05);  */
+    /* Slightly enlarge card on hover */
   }
   
   .card-img-top {

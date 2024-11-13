@@ -30,7 +30,7 @@
             <!-- Pizza Item 1 -->
             <div class="col-md-4 mb-4">
               <div class="card">
-                <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
+                <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
                 <div class="card-body">
                   <h5 class="card-title">Margherita Pizza</h5>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
@@ -42,7 +42,7 @@
             <!-- Pizza Item 2 -->
             <div class="col-md-4 mb-4">
               <div class="card">
-                <img src="path-to-pizza-image-2.jpg" class="card-img-top" alt="Pepperoni Pizza">
+                <img src="images/pepperoni-pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
                 <div class="card-body">
                   <h5 class="card-title">Pepperoni Pizza</h5>
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
@@ -54,7 +54,7 @@
             <!-- Pizza Item 3 -->
             <div class="col-md-4 mb-4">
               <div class="card">
-                <img src="path-to-pizza-image-3.jpg" class="card-img-top" alt="Veggie Pizza">
+                <img src="images/veggie-pizza-v2.jpg" class="card-img-top" alt="Veggie Pizza">
                 <div class="card-body">
                   <h5 class="card-title">Veggie Pizza</h5>
                   <p class="card-text">Loaded with fresh vegetables and cheese.</p>
@@ -72,7 +72,7 @@
             <!-- Pizza Item 1 -->
             <div class="col-md-4 mb-4">
               <div class="card">
-                <!-- <img src="path-to-pizza-image-1.jpg" class="card-img-top" alt="Margherita Pizza"> -->
+                <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
                 <div class="card-body">
                   <h5 class="card-title">Margherita Pizza</h5>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
