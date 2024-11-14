@@ -120,6 +120,8 @@ p{
 
 .hero-section .row{
   align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 }
   
   .hero-image {
@@ -149,6 +151,19 @@ p{
   .hero-section .lead{
     color: #fff !important;
     font-weight: 500;
+  }
+
+  .hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-buttons .btn-green:nth-child(2){
+    background-color: #fff7eb !important;
+    color: #43846e !important;
+    border: 3px solid #fff7eb !important;
   }
 
   .special-offers-section {
@@ -349,13 +364,30 @@ p{
   }
 
  .popular-pizza-block .card-text strong{
+   color: #dcd9d4;
    font-family: "peachy-keen-jf", sans-serif;
-   font-size: 18px;
+   font-size: 20px;
+   letter-spacing: 1px;
   }
 
   .popular-pizzas-section .btn-red{
     width: 100%;
     margin-top: 15px;
+  }
+
+  .popular-pizzas-section .pizza-icon{
+    height: 60px;
+  }
+
+  .card-link .popular-pizza-block .fa-chevron-right{
+  
+    border-radius: 100%;
+    padding: 20px 21px 20px 21px;
+  }
+  .card-link:hover .popular-pizza-block .fa-chevron-right{
+    background-color: #679987;
+    border-radius: 100%;
+    padding: 20px 21px 20px 21px;
   }
 
   /**MENU */

@@ -3,17 +3,20 @@
     <div class="container">
       <div class="row">
         <!-- Left Side: Image -->
-        <div class="col-lg-6 d-none d-lg-block">
+        <!-- <div class="col-lg-6 d-none d-lg-block">
           <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image">
-        </div>
+        </div> -->
   
         <!-- Right Side: Text and CTA -->
-        <div class="hero-right-cta col-lg-6 text-light text-center">
-          <h1 class="display-4 fw-bold">Craft Your Perfect Pizza at Pizzaworks!</h1>
-          <!-- <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image"> -->
+        <div class="hero-right-cta col-lg-8 text-light text-center">
+          <!-- <h1 class="display-4 fw-bold">Craft Your Perfect Pizza at Pizzaworks!</h1> -->
+          <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image">
           <!-- <h1 class="display-4 fw-bold">PizzaWorks!</h1> -->
-          <p class="lead">Handcrafted ingredients. Endless combinations.</p> 
+          <!-- <p class="lead">Handcrafted ingredients. Endless combinations.</p>  -->
+           <div class="hero-buttons">
           <a href="menu.php" class="btn btn-green btn-primary btn-lg mt-3">Explore Our Menu</a>
+          <a href="coupons.php" class="btn btn-green btn-primary btn-lg mt-3">Deals</a>
+           </div>
         </div>
       </div>
     </div>
@@ -53,75 +56,83 @@
          </div> -->
          
          <div class="col-md-3"> 
+         <a href="#" class="card-link">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
               <h5 class="card-title">$12.99</h5>
               <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
               <div class="popular-pizza-block-bottom">
                 <div>
-                   <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i>
+                   <!-- <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i> -->
+                   <img src="images/pizza-icon.svg" class="pizza-icon" alt="Pizza Icon">
                 </div>
                 <div>
                   <p class="card-text"><strong>Margherita Pizza</strong></p>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
                 </div>
                 <div>
-                  <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
+                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
                 </div>
               </div>
             </div>
-            
-            </div>
-            <a href="#" class="add-to-cart btn-red btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Order Now</a>
+             </div>
+            </a>
+            <!-- <a href="#" class="add-to-cart btn-red btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Order Now</a> -->
         </div>
          
   
         <!-- Pizza Card 2 -->
          
         <div class="col-md-3">
+        <a href="#" class="card-link">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
               <h5 class="card-title">$14.99</h5>
               <img src="images/pepperoni-pizza.jpg" class="card-img-top" alt="Pepperoni Pizza">
               <div class="popular-pizza-block-bottom">
                 <div>
-                   <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i>
+                <img src="images/pizza-icon.svg" class="pizza-icon" alt="Pizza Icon">
+                   <!-- <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i> -->
                 </div>
                 <div>
                   <p class="card-text"><strong>Pepperoni Pizza</strong></p>
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
                 </div>
                 <div>
-                  <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
+                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
                 </div>
               </div>
             </div>
             </div>
-            <a href="#" class="btn-red btn btn-primary">Order Now</a>
+            <!-- <a href="#" class="btn-red btn btn-primary">Order Now</a> -->
+            </a>
         </div>
   
         <!-- Pizza Card 3 -->
         <div class="col-md-3">
+        <a href="#" class="card-link">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">  
                 <h5 class="card-title">$13.99</h5>
                 <img src="images/veggie-pizza-v2.jpg" class="card-img-top" alt="Veggie Pizza">
                 <div class="popular-pizza-block-bottom">
                 <div>
-                   <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i>
+                <img src="images/pizza-icon.svg" class="pizza-icon" alt="Pizza Icon">
+                   <!-- <i class="fa-solid fa-pizza-slice fa-rotate-180" style="color: #000000;"></i> -->
                 </div>
                   <div>
                     <p class="card-text"><strong>Veggie Pizza</strong></p>
                     <p class="card-text">Loaded with fresh vegetables and cheese.</p>
                   </div>
                   <div>
-                    <!-- <i class="fa-solid fa-chevron-right" style="color: #000000;"></i> -->
+                    <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
                   </div>
                 </div>
               </div>
             </div>
-            <a href="#" class="btn-red btn btn-primary">Order Now</a>
+            <!-- <a href="#" class="btn-red btn btn-primary">Order Now</a> -->
         </div>
+        </a>
       </div>
    
   </section>
