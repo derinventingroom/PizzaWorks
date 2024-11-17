@@ -36,7 +36,7 @@
               <!-- <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
               </li> -->
-              <li class="nav-item">
+              <li class="nav-item cart">
                 <a href="cart.php" class="btn btn-outline-secondary">
                 <i class="fas fa-shopping-cart"></i>
                   <span id="cart-count" class="badge badge-pill badge-danger">0</span>

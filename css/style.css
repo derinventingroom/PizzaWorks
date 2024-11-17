@@ -1,5 +1,12 @@
-.badge{
-  color:red !important;
+.badge, .fa-shopping-cart{
+  color: #5a826d !important;
+}
+
+.cart .btn:hover{
+  background-color:#5a826d;
+}
+.cart .btn:hover > .badge, .cart .btn:hover > .fa-shopping-cart {
+  color: #fff !important;
 }
 
 /* Global */
@@ -51,7 +58,9 @@ p{
   background-color: #ffe4b1;
 }
 /***HOME***/
-
+.pop-pizza-header h2{
+  color: #53826e !important;
+}
 .pop-pizza-header .card{
   background-color: transparent;
 }
@@ -88,6 +97,11 @@ p{
   color: #ffbf46 !important;
 } */
 
+.navbar{
+  border-bottom: 5px solid #63816e;
+  border-top: 5px solid #63816e;
+}
+
 .navbar-home {
   background-color: transparent !important;
   color: #ffffff;
@@ -109,7 +123,6 @@ p{
 /* HERO */
 .hero-section {
   background-image: url('../images/home-hero-v2.jpg');
-  background-color: #ffbf46;
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
@@ -181,7 +194,7 @@ p{
 
   .carousel{
     border-top: 10px solid #a1363a;
-    /* border-bottom: 10px solid #f42b03; */
+    border-bottom: 10px solid #a1363a;
   }
   
   .carousel-item {
@@ -324,6 +337,7 @@ p{
     position: relative;
     border-radius: 15px;
     border: 4px solid #42846d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
   /* .popular-pizza-block-bottom{
@@ -366,7 +380,7 @@ p{
  .popular-pizza-block .card-text strong{
    color: #dcd9d4;
    font-family: "peachy-keen-jf", sans-serif;
-   font-size: 20px;
+   font-size: 17px;
    letter-spacing: 1px;
   }
 
@@ -380,8 +394,8 @@ p{
   }
 
   .card-link .popular-pizza-block .fa-chevron-right{
-  
     border-radius: 100%;
+    color:#fff;
     padding: 20px 21px 20px 21px;
   }
   .card-link:hover .popular-pizza-block .fa-chevron-right{
@@ -392,10 +406,66 @@ p{
 
   /**MENU */
   .menu-section {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #fef7ea; /* Light background */
+    border-bottom: 10px solid #a1363a;
   }
-  
-  .card {
+
+  .menu-section .menu-row{
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .menu-section .menu-row img{
+    max-width: 30%;
+  }
+
+.menu-section .add-to-cart, .menu-section .customize-block .btn{
+  border-radius: 30px !important;
+  font-family: "open-sans", sans-serif;
+  font-weight: 600;
+  background-color: #5a826d;
+  color: #fff;
+}
+
+.menu-section .add-to-cart:hover, .menu-section .customize-block .btn:hover{
+  border-radius: 30px !important;
+  font-family: "open-sans", sans-serif;
+  font-weight: 600;
+  background-color: #679987;
+  color: #fff;
+}
+
+.menu-section .card{
+  border: none;
+  transition: transform 0.2s;
+  border: 2px solid #5a826d;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-section .card .card-title{
+  font-family: "peachy-keen-jf", sans-serif;
+}
+
+.menu-section .menu-card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-section .card-img-top:not(.customize-block .card-img-top){
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.customize-block .card-img-top{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+    .card {
     border: none; /* Remove default border */
     transition: transform 0.2s; /* Smooth scaling effect */
   }
@@ -421,8 +491,41 @@ p{
   .coupon-section{
     background-color: #f8f9fa !important;
   }
+
+  footer{
+    background-color: #fdf7eb;
+    border-top: 10px solid #a1363a;
+    border-bottom: 10px solid #a1363a;
+    padding: 30px;
+  }
+
+  footer .footer-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    left: -1.5%;
+    min-height: 20vh;
+  }
+
+  .footer-caption{
+    padding: 30px;
+  }
+
+  .footer-caption p{
+    text-align: center;
+  }
   
   /***MENU***/
 
 
-    
+/*mobile*/
+    /* display: block; */
+    /* width: auto; */
+    /* height: 100%; */
+    /* max-height: 200px; */
+    /* overflow: hidden;
+    object-fit: cover; */

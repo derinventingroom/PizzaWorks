@@ -71,7 +71,7 @@
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
                 </div>
                 <div>
-                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
                 </div>
                 <div>
-                  <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
                     <p class="card-text">Loaded with fresh vegetables and cheese.</p>
                   </div>
                   <div>
-                    <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </div>
               </div>
