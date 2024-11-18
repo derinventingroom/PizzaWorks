@@ -98,8 +98,8 @@ p{
 } */
 
 .navbar{
-  border-bottom: 5px solid #63816e;
-  border-top: 5px solid #63816e;
+  border-bottom: 3px solid #63816e;
+  /* border-top: 5px solid #63816e; */
 }
 
 .navbar-home {
@@ -489,11 +489,58 @@ p{
 
   /* Coupon Section */
   .coupon-section{
-    background-color: #f8f9fa !important;
+    background-color: #fef7ea !important;
   }
 
+  .coupon-section .card{
+    background-color: #5a826d;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .coupon-section h1{
+    font-family: "peachy-keen-jf", sans-serif;
+    color: #5a826d;
+  }
+
+  .coupon-section .card-title{
+    font-family: "peachy-keen-jf", sans-serif;
+    color: #fff;
+  }
+
+  .coupon-section .card img{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 30%;
+  }
+
+  .coupon-section .card p{
+    font-family: "open-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    /* color: #fff; */
+  }
+
+  .coupon-section .coupon-button{
+    display: flex;
+  }
+
+  .coupon-section .apply-coupon{
+    border-radius: 30px !important;
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+    color: #5a826d;
+  }
+
+  /* .coupon-section .col-md-8{
+    margin: auto;
+  } */
+
   footer{
-    background-color: #fdf7eb;
+    background-color: #efe1c3;
     border-top: 10px solid #a1363a;
     border-bottom: 10px solid #a1363a;
     padding: 30px;
