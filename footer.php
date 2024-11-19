@@ -1,20 +1,27 @@
 <section class="background-image-section"></section>
 <footer>
-  
+  <div class="container">
     <div class="row">
-    <div class="col-lg-4"></div>
-    <div class="col-lg-4">      <img src="images/pizza-logo.png" alt="Delicious Pizza" class="img-fluid hero-image"></div>
-    <div class="col-lg-4"></div>
-      <div class="col-lg-12">
-        <ul class="footer-list">
-          <li class="footer-list-item">Home</li>
-          <li class="footer-list-item">Pizza</li>
-          <li class="footer-list-item">Pasta</li>
-          <li class="footer-list-item">Salads</li>
-          <li class="footer-list-item">Desserts</li>
-          <li class="footer-list-item">Wings</li>
-          <li class="footer-list-item">Drinks</li>
+     <div class="col-lg-3">
+       <ul class="footer-list">
+          <li class="footer-list-item"><a href="">Home</a></li>
+          <li class="footer-list-item"><a href="">Pizza</a></li>
+          <li class="footer-list-item"><a href="">Sides</a></li>
+          <li class="footer-list-item"><a href="">Salads</a></li>
+          <li class="footer-list-item"><a href="">Desserts</a></li>
+          <li class="footer-list-item"><a href="">Drinks</a></li>
         </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="">About</a></li>
+          <li class="footer-list-item"><a href="">Web Project Documentation</a></li>
+          <li class="footer-list-item"><a href="">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 footer-logo-block">
+        <img src="images/pizza-works-animated-logo.gif" alt="PizzaWorks | Footer Logo" width="300" class="d-inline-block align-top">
+        <img src="images/footer-logo.png" alt="PizzaWorks | Footer Logo" width="400" class="d-inline-block align-top">
       </div>
     </div>
     <div class="row">
@@ -22,6 +29,7 @@
         <p>Copyright © 2024. PizzaWorks.</p>
       </div>
     </div>
+</div>
 </footer>
 <section class="background-image-section"></section>
 

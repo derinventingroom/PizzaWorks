@@ -86,7 +86,7 @@
                 </div>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
                   
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Cheesy Pizza" data-price="9.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
                   </div>
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
                   
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Pepperoni Pizza" data-price="14.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Supreme Pizza" data-price="14.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   </div>
                   <p class="card-text">Loaded with fresh vegetables and cheese.</p>
                   
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Veggie Pizza" data-price="13.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Meat Lovers Pizza" data-price="14.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -134,11 +134,11 @@
                 <div class="card-body">
                   <div class="menu-card-header">
                    <h5 class="card-title">Garlic Bread</h5>
-                   <p class="fw-bold">$4.99</p>
+                   <p class="fw-bold">$2.99</p>
                   </div>
                   <p class="card-text">Deliciously baked garlic bread.</p>
                   
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Garlic Bread" data-price="4.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Garlic Bread - 10 ct" data-price="5.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -148,12 +148,12 @@
                 <img src="images/buffalo-wings-menu.jpg" class="card-img-top" alt="Wings">
                 <div class="card-body">
                   <div class="menu-card-header">
-                    <h5 class="card-title">Chicken Wings</h5>
+                    <h5 class="card-title">Buffalo Wings</h5>
                     <p class="fw-bold">$7.99</p>
                   </div>
                   <p class="card-text">Spicy wings served with ranch dip.</p>
                   
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Wings" data-price="7.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Buffalo Wings - 10 ct" data-price="7.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@
                   <p class="fw-bold">$5.99</p>
                   </div>
                   <p class="card-text">Fresh greens with Caesar dressing.</p>
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Caesar Salad" data-price="5.99">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Strips - 6 ct" data-price="4.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
                     <p class="fw-bold">5.99</p>
                   </div>
                   <p class="card-text">Refreshing iced tea with lemon.</p>
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Iced Tea" data-price="2.49">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -216,7 +216,57 @@
                     <p class="fw-bold">$6.99</p>
                   </div>
                   <p class="card-text">Pure, refreshing bottled water.</p>
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Bottled Water" data-price="1.49">Add to Cart</a>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Salad" data-price="6.99">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Desserts Category -->
+          <div class="col-md-12">
+          <h3 class="my-4">Desserts</h3>
+          <div class="row">
+            <!-- Dessert Item 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images\cinnamon-squares-menu.jpg" class="card-img-top" alt="Soda">
+                <div class="card-body">
+                  <div class="menu-card-header">
+                    <h5 class="card-title">Cinnamon Squares</h5>
+                    <p class="fw-bold">$3.99</p>
+                  </div>
+                  <p class="card-text">Choice of cola, lemon-lime, or root beer.</p>
+                  
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Cinnamon Squares 10 ct" data-price="3.99">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Dessert Item 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images\brownies-menu.jpg" class="card-img-top" alt="Iced Tea">
+                <div class="card-body">
+                  <div class="menu-card-header">
+                    <h5 class="card-title">Brownies</h5>
+                    <p class="fw-bold">$3.49</p>
+                  </div>
+                  <p class="card-text">Refreshing iced tea with lemon.</p>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Browies - 6 ct" data-price="3.49">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Dessert Item 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images\butter-pecan-cookies-menu.jpg" class="card-img-top" alt="Water">
+                <div class="card-body">
+                  <div class="menu-card-header">
+                    <h5 class="card-title">Buttery Pecan Cookies</h5>
+                    <p class="fw-bold">$2.49</p>
+                  </div>
+                  <p class="card-text">Pure, refreshing bottled water.</p>
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Buttery Pecan Cookies - 6 ct" data-price="2.49">Add to Cart</a>
                 </div>
               </div>
             </div>

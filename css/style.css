@@ -485,6 +485,41 @@ p{
     align-items: baseline;
     justify-content: space-between;
     gap: 24px;
+    border: 3px solid #63816e;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 30px;
+  }
+
+  .cart-item-style p{
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .cart-item-style .remove-item{
+    background-color: #63816e;
+    color: #fff;
+    border: 3px solid #63816e;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .coupon-applied{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .coupon-applied p{
+    font-weight: 900;
+  }
+
+  .coupon-applied .remove-coupon{
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #953e3e;
+    color: #fff;
+    font-weight: 900;;
   }
 
   /* Coupon Section */
@@ -543,19 +578,24 @@ p{
     background-color: #efe1c3;
     border-top: 10px solid #a1363a;
     border-bottom: 10px solid #a1363a;
-    padding: 30px;
+  }
+
+  footer .row{
+    margin-top: 100px;
+    justify-content: space-between;
   }
 
   footer .footer-list{
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+    margin-top: 40px;
     list-style: none;
-    max-width: 1400px;
+    /* max-width: 1400px;
     margin: auto;
     position: relative;
     left: -1.5%;
-    min-height: 20vh;
+    min-height: 20vh; */
   }
 
   .footer-caption{
@@ -564,6 +604,12 @@ p{
 
   .footer-caption p{
     text-align: center;
+  }
+
+  .footer-logo-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   /***MENU***/

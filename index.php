@@ -56,7 +56,7 @@
          </div> -->
          
          <div class="col-md-3"> 
-         <a href="#" class="card-link">
+         <a href="#" class="add-to-cart card-link" data-name="Margherita Pizza" data-price="12.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
               <h5 class="card-title">$12.99</h5>
@@ -84,7 +84,7 @@
         <!-- Pizza Card 2 -->
          
         <div class="col-md-3">
-        <a href="#" class="card-link">
+        <a href="#" class="add-to-cart card-link" data-name="Pepperoni Pizza" data-price="14.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
               <h5 class="card-title">$14.99</h5>
@@ -110,7 +110,7 @@
   
         <!-- Pizza Card 3 -->
         <div class="col-md-3">
-        <a href="#" class="card-link">
+        <a href="#" class="add-to-cart card-link" data-name="Veggie Pizza" data-price="13.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">  
                 <h5 class="card-title">$13.99</h5>
