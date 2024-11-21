@@ -14,7 +14,7 @@
                 <img src="images/customize-pizza.jpg" class="card-img-top" alt="Margherita Pizza">
                 <div class="card-body">
                   <h5 class="card-title">Build Your Own</h5>
-                  <p class="card-text">Classic cheese pizza with fresh basil.</p>
+                  <p class="card-text">Create your perfect pizza, your way.</p>
                   <p class="fw-bold">$12.99</p>
                   <a href="buildpizza.php" class="btn btn-primary">Customize</a>
                 </div>
@@ -36,6 +36,28 @@
                     <p class="fw-bold">$12.99</p>
                   </div>
                   <p class="card-text">Classic cheese pizza with fresh basil.</p>
+
+              <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="12.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
+                  
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Add to Cart</a>
                 </div>
               </div>
@@ -50,6 +72,26 @@
                     <p class="fw-bold">$14.99</p>
                   </div>
                   <p class="card-text">A favorite topped with spicy pepperoni.</p>
+                  <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="14.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Pepperoni Pizza" data-price="14.99">Add to Cart</a>
                 </div>
               </div>
@@ -64,6 +106,26 @@
                     <p class="fw-bold">$13.99</p>
                 </div>
                   <p class="card-text">Loaded with fresh vegetables and cheese.</p>
+                  <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="13.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
                   
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Veggie Pizza" data-price="13.99">Add to Cart</a>
                 </div>
@@ -84,9 +146,28 @@
                   <h5 class="card-title">Cheesy Pizza</h5>
                   <p class="fw-bold">$12.99</p>
                 </div>
-                  <p class="card-text">Classic cheese pizza with fresh basil.</p>
-                  
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Cheesy Pizza" data-price="9.99">Add to Cart</a>
+                  <p class="card-text">Classic cheese pizza with fresh mozzerella.</p>
+                  <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="12.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Cheesy Pizza" data-price="12.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -99,8 +180,27 @@
                     <h5 class="card-title">Supreme Pizza</h5>
                     <p class="fw-bold">$14.99</p>
                   </div>
-                  <p class="card-text">A favorite topped with spicy pepperoni.</p>
-                  
+                  <p class="card-text">Savory meats, fresh veggies, and melty cheese.</p>
+                  <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="14.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Supreme Pizza" data-price="14.99">Add to Cart</a>
                 </div>
               </div>
@@ -114,9 +214,28 @@
                     <h5 class="card-title">Meat Lovers Pizza</h5>
                     <p class="fw-bold">$13.99</p>
                   </div>
-                  <p class="card-text">Loaded with fresh vegetables and cheese.</p>
-                  
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Meat Lovers Pizza" data-price="14.99">Add to Cart</a>
+                  <p class="card-text">Packed with meats, perfect for carnivores!</p>
+                  <div class="user-options">
+                <div class="option-flex">
+                    <!-- <label for="size-margherita">Size:</label> -->
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="size-margherita" class="menu-size" data-base-price="13.99" data-name="Margherita Pizza" placeholder="Size">
+                    <option value="" disabled selected hidden>Size</option>
+                        <option value="small" data-price="0">Small</option>
+                        <option value="medium" data-price="2">Medium (+$2)</option>
+                        <option value="large" data-price="4">Large (+$4)</option>
+                    </select>
+                    <!-- <label for="quantity-margherita">Quantity:</label> -->
+                 </div>
+                  <!-- <label for="crust-margherita">Crust:</label> -->
+                  <select id="crust-margherita" class="menu-crust">
+                      <option value="" disabled selected hidden>Crust</option>
+                      <option value="thin">Thin Crust</option>
+                      <option value="thick">Thick Crust</option>
+                      <option value="stuffed" data-price="3">Stuffed Crust (+$3)</option>
+                  </select>
+               </div><!--End User Options-->
+                  <a href="#" class="add-to-cart btn btn-primary" data-name="Meat Lovers Pizza" data-price="13.99">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -166,7 +285,7 @@
                   <h5 class="card-title">Chicken Strips</h5>
                   <p class="fw-bold">$5.99</p>
                   </div>
-                  <p class="card-text">Fresh greens with Caesar dressing.</p>
+                  <p class="card-text">Crispy, tender chicken strips, irresistibly tasty</p>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Strips - 6 ct" data-price="4.99">Add to Cart</a>
                 </div>
               </div>
@@ -201,7 +320,7 @@
                     <h5 class="card-title">Garden Salad</h5>
                     <p class="fw-bold">5.99</p>
                   </div>
-                  <p class="card-text">Refreshing iced tea with lemon.</p>
+                  <p class="card-text">Fresh, crisp veggies tossed to perfection!</p>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
                 </div>
               </div>
@@ -215,7 +334,7 @@
                     <h5 class="card-title">Chicken Salad</h5>
                     <p class="fw-bold">$6.99</p>
                   </div>
-                  <p class="card-text">Pure, refreshing bottled water.</p>
+                  <p class="card-text">Grilled chicken atop crisp garden greens.</p>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Salad" data-price="6.99">Add to Cart</a>
                 </div>
               </div>
@@ -236,7 +355,7 @@
                     <h5 class="card-title">Cinnamon Squares</h5>
                     <p class="fw-bold">$3.99</p>
                   </div>
-                  <p class="card-text">Choice of cola, lemon-lime, or root beer.</p>
+                  <p class="card-text">Warm, sweet squares topped with frosting.</p>
                   
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Cinnamon Squares 10 ct" data-price="3.99">Add to Cart</a>
                 </div>
@@ -251,7 +370,7 @@
                     <h5 class="card-title">Brownies</h5>
                     <p class="fw-bold">$3.49</p>
                   </div>
-                  <p class="card-text">Refreshing iced tea with lemon.</p>
+                  <p class="card-text">Rich, fudgy brownies for chocolate lovers.</p>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Browies - 6 ct" data-price="3.49">Add to Cart</a>
                 </div>
               </div>
@@ -265,7 +384,7 @@
                     <h5 class="card-title">Buttery Pecan Cookies</h5>
                     <p class="fw-bold">$2.49</p>
                   </div>
-                  <p class="card-text">Pure, refreshing bottled water.</p>
+                  <p class="card-text">Soft, buttery cookies loaded with pecans.</p>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Buttery Pecan Cookies - 6 ct" data-price="2.49">Add to Cart</a>
                 </div>
               </div>

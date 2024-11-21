@@ -26,11 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
             cart.forEach((item, index) => {
                 totalPrice += item.price;
                 cartItemsContainer.innerHTML += `
-                    <div class="cart-item-style">
-                        <p>${item.name} - $${item.price.toFixed(2)}</p>
-                        <button class="remove-item btn btn-danger btn-sm" data-index="${index}">X</button>
-                    </div>
-                `;
+                <div class="cart-item-style">
+                    <p><strong>${item.name}</strong></p>
+                    <p>Size: ${item.size}</p>
+                    <p>Crust: ${item.crust}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                    <p>Price: $${item.price.toFixed(2)}</p>
+                    <button class="remove-item btn btn-danger btn-sm" data-index="${index}">Remove</button>
+                </div>
+                <hr>
+            `;
             });
         }
 
@@ -94,13 +99,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', () => {
             const name = button.getAttribute('data-name');
-            const price = parseFloat(button.getAttribute('data-price'));
-
+            const basePrice = parseFloat(button.getAttribute('data-price'));
+            
+            // Retrieve the selected size
+            const sizeSelect = button.parentElement.querySelector('.menu-size');
+            const selectedSize = sizeSelect ? sizeSelect.options[sizeSelect.selectedIndex] : null;
+            const sizePrice = selectedSize ? parseFloat(selectedSize.getAttribute('data-price')) : 0;
+            const sizeName = selectedSize ? selectedSize.value : 'default';
+    
+            // Retrieve the selected crust
+            const crustSelect = button.parentElement.querySelector('.menu-crust');
+            const selectedCrust = crustSelect ? crustSelect.options[crustSelect.selectedIndex] : null;
+            const crustName = selectedCrust ? selectedCrust.value : 'default';
+            const crustPrice = selectedCrust && crustName === 'stuffed' ? 3 : 0;
+    
+            // Retrieve the selected quantity
+            const quantityInput = button.parentElement.querySelector('.menu-quantity');
+            const quantity = quantityInput ? parseInt(quantityInput.value) : 1;
+    
+            // Calculate total price for the item
+            const price = (basePrice + sizePrice + crustPrice) * quantity;
+    
             // Add item to cart
-            cart.push({ name, price });
+            cart.push({ name, crust: crustName, size: sizeName, quantity, price });
             localStorage.setItem('cart', JSON.stringify(cart));
             alert(`${name} added to cart!`);
-
+    
             // Update the cart display and count
             updateCartDisplay();
             updateCartCount();

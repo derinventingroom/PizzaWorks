@@ -4,6 +4,7 @@
     <div class="row">
      <div class="col-lg-3">
        <ul class="footer-list">
+          <h3>Menu</h3>
           <li class="footer-list-item"><a href="">Home</a></li>
           <li class="footer-list-item"><a href="">Pizza</a></li>
           <li class="footer-list-item"><a href="">Sides</a></li>
@@ -14,6 +15,7 @@
       </div>
       <div class="col-lg-3">
         <ul class="footer-list">
+          <h3>Information</h3>
           <li class="footer-list-item"><a href="">About</a></li>
           <li class="footer-list-item"><a href="">Web Project Documentation</a></li>
           <li class="footer-list-item"><a href="">Disclaimer</a></li>
