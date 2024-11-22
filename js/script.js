@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-        // Check if the current page is the home page
-        if (window.location.pathname === "/" || window.location.pathname === "/index.php") {
-            // Add the 'navbar-home' class to make the navbar transparent on the home page
-            const navbar = document.querySelector(".navbar");
-            if (navbar) {
-                navbar.classList.add("navbar-home");
-            }
+    // Check if the current page is the home page
+    if (window.location.pathname === "/" || window.location.pathname === "/index.php") {
+        // Add the 'navbar-home' class to make the navbar transparent on the home page
+        const navbar = document.querySelector(".navbar");
+        if (navbar) {
+            navbar.classList.add("navbar-home");
         }
+    }
+
     // Get the cart from local storage or initialize it
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -24,18 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
             cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
         } else {
             cart.forEach((item, index) => {
-                totalPrice += item.price;
+                // Validate and sanitize the item price
+                const itemPrice = (item.price && !isNaN(item.price)) ? parseFloat(item.price) : 0;
+                totalPrice += itemPrice;
+
                 cartItemsContainer.innerHTML += `
-                <div class="cart-item-style">
-                    <p><strong>${item.name}</strong></p>
-                    <p>Size: ${item.size}</p>
-                    <p>Crust: ${item.crust}</p>
-                    <p>Quantity: ${item.quantity}</p>
-                    <p>Price: $${item.price.toFixed(2)}</p>
-                    <button class="remove-item btn btn-danger btn-sm" data-index="${index}">Remove</button>
-                </div>
-                <hr>
-            `;
+                    <div class="cart-item-style">
+                        <p><strong>${item.name}</strong></p>
+                        <p>Size: ${item.size}</p>
+                        <p>Crust: ${item.crust}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <p>Price: $${itemPrice.toFixed(2)}</p>
+                        <button class="remove-item btn btn-danger btn-sm" data-index="${index}">Remove</button>
+                    </div>
+                    <hr>
+                `;
             });
         }
 
@@ -50,9 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Ensure total price doesn’t go below zero
-            if (totalPrice < 0) {
-                totalPrice = 0;
-            }
+            totalPrice = Math.max(totalPrice, 0);
 
             // Display coupon info with a remove button
             cartItemsContainer.innerHTML += `
@@ -64,7 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Display the updated total price
-        document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+        const totalPriceElement = document.getElementById('total-price');
+        if (totalPriceElement) {
+            totalPriceElement.innerText = totalPrice.toFixed(2);
+        }
     }
 
     // Function to update the cart count in the header
@@ -100,25 +105,25 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener('click', () => {
             const name = button.getAttribute('data-name');
             const basePrice = parseFloat(button.getAttribute('data-price'));
-            
+    
             // Retrieve the selected size
             const sizeSelect = button.parentElement.querySelector('.menu-size');
             const selectedSize = sizeSelect ? sizeSelect.options[sizeSelect.selectedIndex] : null;
-            const sizePrice = selectedSize ? parseFloat(selectedSize.getAttribute('data-price')) : 0;
+            const sizePrice = selectedSize ? parseFloat(selectedSize.getAttribute('data-price') || 0) : 0;
             const sizeName = selectedSize ? selectedSize.value : 'default';
     
             // Retrieve the selected crust
             const crustSelect = button.parentElement.querySelector('.menu-crust');
             const selectedCrust = crustSelect ? crustSelect.options[crustSelect.selectedIndex] : null;
             const crustName = selectedCrust ? selectedCrust.value : 'default';
-            const crustPrice = selectedCrust && crustName === 'stuffed' ? 3 : 0;
+            const crustPrice = crustName === 'stuffed' ? 3 : 0;
     
             // Retrieve the selected quantity
             const quantityInput = button.parentElement.querySelector('.menu-quantity');
-            const quantity = quantityInput ? parseInt(quantityInput.value) : 1;
+            const quantity = quantityInput && !isNaN(quantityInput.value) ? parseInt(quantityInput.value) : 1;
     
             // Calculate total price for the item
-            const price = (basePrice + sizePrice + crustPrice) * quantity;
+            const price = ((basePrice || 0) + sizePrice + crustPrice) * quantity;
     
             // Add item to cart
             cart.push({ name, crust: crustName, size: sizeName, quantity, price });
@@ -130,6 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateCartCount();
         });
     });
+    
 
     // Event listener for coupon application
     document.querySelectorAll('.apply-coupon').forEach(button => {
