@@ -16,7 +16,54 @@
                   <h5 class="card-title">Build Your Own</h5>
                   <p class="card-text">Create your perfect pizza, your way.</p>
                   <p class="fw-bold">$12.99</p>
-                  <a href="buildpizza.php" class="btn btn-primary">Customize</a>
+                  <!-- <a href="buildpizza.php" class="btn btn-primary">Customize</a> -->
+                  <a href="#" class="btn btn-primary">Build</a>
+                  <!--Build Form -->
+                  <form id="order-form">
+                      <div class="mb-3">
+                          <label for="pizza-selection" class="form-label">Select Your Pizza:</label>
+                          <select id="pizza-selection" class="form-select" required>
+                              <option value="">Choose a pizza...</option>
+                              <option value="margherita">Margherita</option>
+                              <option value="pepperoni">Pepperoni</option>
+                              <option value="vegetarian">Vegetarian</option>
+                              <option value="bbq-chicken">BBQ Chicken</option>
+                              <option value="hawaiian">Hawaiian</option>
+                          </select>
+                      </div>
+
+                      <div class="mb-3">
+                          <label for="size" class="form-label">Size:</label>
+                          <select id="size" class="form-select" required>
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                              <option value="large">Large</option>
+                          </select>
+                      </div>
+
+                      <div class="mb-3">
+                          <label for="toppings" class="form-label">Additional Toppings:</label>
+                          <div>
+                              <input type="checkbox" id="pepperoni" value="Pepperoni">
+                              <label for="pepperoni">Pepperoni</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="mushrooms" value="Mushrooms">
+                              <label for="mushrooms">Mushrooms</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="onions" value="Onions">
+                              <label for="onions">Onions</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="extra-cheese" value="Extra Cheese">
+                              <label for="extra-cheese">Extra Cheese</label>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Add to Cart</button>
+                  </form>
+                  <!-- <div id="order-summary" class="mt-4"></div> -->
+                  <!--./End Build Pizza -->
                 </div>
               </div>
             </div>
@@ -41,7 +88,7 @@
                 <div class="option-flex">
                     <!-- <label for="size-margherita">Size:</label> -->
                     <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                    <select id="size-margherita" class="menu-size" data-base-price="12.99" data-name="Margherita Pizza" placeholder="Size">
+                    <select id="pizza-size" class="menu-size" data-base-price="12.99" data-name="Margherita Pizza" placeholder="Size">
                     <option value="" disabled selected hidden>Size</option>
                         <option value="small" data-price="0">Small</option>
                         <option value="medium" data-price="2">Medium (+$2)</option>
@@ -406,7 +453,15 @@
                     <p class="fw-bold">$1.99</p>
                   </div>
                   <p class="card-text">Choice of cola, lemon-lime, or root beer.</p>
-                  
+                  <div class="soda option-flex">
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                  <select id="" class="menu-flavor">
+                      <option value="" disabled selected hidden>Flavor</option>
+                      <option value="Cola">Cola</option>
+                      <option value="Lemon/Lime Pop">Lemon/Lime</option>
+                      <option value="Root Beer">Root Beer</option>
+                  </select>
+                </div>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Soda" data-price="1.99">Add to Cart</a>
                 </div>
               </div>

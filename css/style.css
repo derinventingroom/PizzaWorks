@@ -474,7 +474,7 @@ p{
   margin-bottom: 10px;
 }
 
-.user-options select, .user-options .menu-quantity{
+.user-options select, .user-options .menu-quantity, .soda.option-flex input, .soda.option-flex select{
   /* padding: 5px 0 5px 5px; */
   padding: 10px;
   border-radius: 5px;
@@ -491,7 +491,7 @@ p{
   width: 20%;
 }
 
-.option-flex .menu-size{
+.option-flex .menu-size, .soda.option-flex select{
   width: 100%;
 }
 
