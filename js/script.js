@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${item.flavor ? `<p>Flavor: ${item.flavor}</p>` : ''}
                         <p>Quantity: ${item.quantity}</p>
                         <p>Price: $${itemPrice.toFixed(2)}</p>
-                        <button class="remove-item btn btn-danger btn-sm" data-index="${index}">Remove</button>
+                        <button class="remove-item btn btn-danger btn-sm" data-index="${index}">X</button>
                     </div>
                     <hr>
                 `;
@@ -47,19 +47,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const appliedCoupon = JSON.parse(localStorage.getItem('appliedCoupon'));
         if (appliedCoupon) {
-            if (appliedCoupon.type === 'percentage') {
-                totalPrice *= (1 - appliedCoupon.value / 100);
-            } else if (appliedCoupon.type === 'amount') {
-                totalPrice -= appliedCoupon.value;
-            }
-            totalPrice = Math.max(totalPrice, 0);
+            const hasLargePizza = cart.some(item => item.size === "large");
 
-            cartItemsContainer.innerHTML += `
-                <div class="coupon-applied">
-                    <p>Coupon Applied: ${appliedCoupon.description}</p>
-                    <button class="remove-coupon btn btn-warning btn-sm">X</button>
-                </div>
-            `;
+            // Unapply coupon if no large pizza is present
+            if (!hasLargePizza && appliedCoupon.type === "percentage" && appliedCoupon.value === 10) {
+                localStorage.removeItem('appliedCoupon');
+                alert("The 10% coupon has been removed because there is no large pizza in the cart.");
+            } else {
+                if (appliedCoupon.type === 'percentage') {
+                    totalPrice *= (1 - appliedCoupon.value / 100);
+                } else if (appliedCoupon.type === 'amount') {
+                    totalPrice -= appliedCoupon.value;
+                }
+                totalPrice = Math.max(totalPrice, 0);
+
+                cartItemsContainer.innerHTML += `
+                    <div class="coupon-applied">
+                        <p>Coupon Applied: ${appliedCoupon.description}</p>
+                        <button class="remove-coupon btn btn-warning btn-sm">X</button>
+                    </div>
+                `;
+            }
         }
 
         // Function to apply a coupon
@@ -106,6 +114,23 @@ function applyCoupon(couponCode, size, totalPrice) {
             alert('Coupon removed!');
         }
     });
+
+    document.addEventListener('click', (event) => {
+        if (event.target.id === "tenpercent") { // Check if the clicked element is the coupon link
+            const cart = JSON.parse(localStorage.getItem('cart')) || []; // Retrieve the cart from localStorage
+            
+            // Check if there is a large pizza in the cart
+            const hasLargePizza = cart.some(item => item.size === "large");
+    
+            if (!hasLargePizza) {
+                event.preventDefault(); // Prevent the default action of the link
+                alert("You must have a large pizza in your cart to apply this coupon!");
+            } else {
+                alert("Coupon applied successfully!");
+            }
+        }
+    });
+    
 
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', () => {

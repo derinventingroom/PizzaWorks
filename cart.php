@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-
+<section class="cart-section py-5">
 <div class="container mt-5">
     <h1>Your Cart</h1>
     <div id="cart-items" class="col-lg-8"></div>
@@ -9,6 +9,6 @@
         <a href="checkout.php" class="btn btn-success">Proceed to Checkout</a>
     </div>
 </div>
-
+</section>
 
 <?php include 'footer.php'; ?>

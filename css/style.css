@@ -421,6 +421,7 @@ p{
 
   .menu-section .menu-row img{
     max-width: 30%;
+    height: max-content;
   }
 
 .menu-section .add-to-cart, .menu-section .customize-block .btn{
@@ -446,6 +447,19 @@ p{
   border-radius: 12px;
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
 }
+
+.menu-section form {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-section form.form-open {
+  max-height: 500px; /* Adjust to fit your form's content height */
+  opacity: 1;
+}
+
 
 .menu-section .card .card-title{
   font-family: "peachy-keen-jf", sans-serif;
@@ -523,7 +537,7 @@ p{
 
   .cart-item-style p{
     font-weight: 600;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   .cart-item-style .remove-item{
@@ -533,6 +547,30 @@ p{
     font-size: 17px;
     font-weight: 700;
   }
+
+  .cart-section{
+    border-bottom: 10px solid #a1363a;
+  }
+
+  .cart-section .btn:nth-child(1){
+    border-radius: 30px !important;
+    border: 2px solid #5a826d;
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+    color: #5a826d;
+    padding: 15px;
+  }
+
+  .cart-section .btn:nth-child(2){
+    border-radius: 30px !important;
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+    background-color: #5a826d;
+    color: #fff;
+    padding: 15px;
+  }
+
 
   .coupon-applied{
     display: flex;

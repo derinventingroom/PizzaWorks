@@ -17,51 +17,52 @@
                   <p class="card-text">Create your perfect pizza, your way.</p>
                   <p class="fw-bold">$12.99</p>
                   <!-- <a href="buildpizza.php" class="btn btn-primary">Customize</a> -->
-                  <a href="#" class="btn btn-primary">Build</a>
+                  <a href="#" class="btn btn-primary toggle-form-btn" data-toggle="order-form">Build</a>
                   <!--Build Form -->
-                  <form id="order-form">
-                      <div class="mb-3">
-                          <label for="pizza-selection" class="form-label">Select Your Pizza:</label>
-                          <select id="pizza-selection" class="form-select" required>
-                              <option value="">Choose a pizza...</option>
-                              <option value="margherita">Margherita</option>
-                              <option value="pepperoni">Pepperoni</option>
-                              <option value="vegetarian">Vegetarian</option>
-                              <option value="bbq-chicken">BBQ Chicken</option>
-                              <option value="hawaiian">Hawaiian</option>
-                          </select>
-                      </div>
+                  <form id="order-form" class="form-closed">
+                    <div class="mb-3">
+                        <label for="pizza-selection" class="form-label">Select Your Pizza:</label>
+                        <select id="pizza-selection" class="form-select" required>
+                            <option value="">Choose a pizza...</option>
+                            <option value="margherita">Margherita</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="bbq-chicken">BBQ Chicken</option>
+                            <option value="hawaiian">Hawaiian</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Size:</label>
+                        <select id="size" class="form-select" required>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="toppings" class="form-label">Additional Toppings:</label>
+                        <div>
+                            <input type="checkbox" id="pepperoni" value="Pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mushrooms" value="Mushrooms">
+                            <label for="mushrooms">Mushrooms</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="onions" value="Onions">
+                            <label for="onions">Onions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="extra-cheese" value="Extra Cheese">
+                            <label for="extra-cheese">Extra Cheese</label>
+                        </div>
+                    </div>
+                    <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                </form>
 
-                      <div class="mb-3">
-                          <label for="size" class="form-label">Size:</label>
-                          <select id="size" class="form-select" required>
-                              <option value="small">Small</option>
-                              <option value="medium">Medium</option>
-                              <option value="large">Large</option>
-                          </select>
-                      </div>
 
-                      <div class="mb-3">
-                          <label for="toppings" class="form-label">Additional Toppings:</label>
-                          <div>
-                              <input type="checkbox" id="pepperoni" value="Pepperoni">
-                              <label for="pepperoni">Pepperoni</label>
-                          </div>
-                          <div>
-                              <input type="checkbox" id="mushrooms" value="Mushrooms">
-                              <label for="mushrooms">Mushrooms</label>
-                          </div>
-                          <div>
-                              <input type="checkbox" id="onions" value="Onions">
-                              <label for="onions">Onions</label>
-                          </div>
-                          <div>
-                              <input type="checkbox" id="extra-cheese" value="Extra Cheese">
-                              <label for="extra-cheese">Extra Cheese</label>
-                          </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Add to Cart</button>
-                  </form>
                   <!-- <div id="order-summary" class="mt-4"></div> -->
                   <!--./End Build Pizza -->
                 </div>
@@ -354,6 +355,7 @@
                   <p class="fw-bold">$5.99</p>
                   </div>
                   <p class="card-text">Fresh greens with Caesar dressing.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Caesar Salad" data-price="5.99">Add to Cart</a>
                 </div>
               </div>
@@ -368,6 +370,7 @@
                     <p class="fw-bold">5.99</p>
                   </div>
                   <p class="card-text">Fresh, crisp veggies tossed to perfection!</p>
+                  <input type="number" id="quantity" class="form-control" min="1" value="1" required>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
                 </div>
               </div>
@@ -382,6 +385,7 @@
                     <p class="fw-bold">$6.99</p>
                   </div>
                   <p class="card-text">Grilled chicken atop crisp garden greens.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Salad" data-price="6.99">Add to Cart</a>
                 </div>
               </div>
@@ -403,7 +407,7 @@
                     <p class="fw-bold">$3.99</p>
                   </div>
                   <p class="card-text">Warm, sweet squares topped with frosting.</p>
-                  
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Cinnamon Squares 10 ct" data-price="3.99">Add to Cart</a>
                 </div>
               </div>
@@ -418,6 +422,7 @@
                     <p class="fw-bold">$3.49</p>
                   </div>
                   <p class="card-text">Rich, fudgy brownies for chocolate lovers.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Browies - 6 ct" data-price="3.49">Add to Cart</a>
                 </div>
               </div>
@@ -432,6 +437,7 @@
                     <p class="fw-bold">$2.49</p>
                   </div>
                   <p class="card-text">Soft, buttery cookies loaded with pecans.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Buttery Pecan Cookies - 6 ct" data-price="2.49">Add to Cart</a>
                 </div>
               </div>
@@ -476,6 +482,7 @@
                     <p class="fw-bold">$2.49</p>
                   </div>
                   <p class="card-text">Refreshing iced tea with lemon.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Iced Tea" data-price="2.49">Add to Cart</a>
                 </div>
               </div>
@@ -490,6 +497,7 @@
                     <p class="fw-bold">$1.49</p>
                   </div>
                   <p class="card-text">Pure, refreshing bottled water.</p>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Bottled Water" data-price="1.49">Add to Cart</a>
                 </div>
               </div>

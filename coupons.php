@@ -14,7 +14,7 @@
                                 <h5 class="card-title">10% Off Any Large Pizza</h5>
                                 <p class="card-text">Get 10% off any large pizza! Perfect for pizza nights with friends and family.</p>
                                 <!-- <p class="fw-bold">10% Discount</p> -->
-                                <a href="#" class="btn btn-primary apply-coupon" data-coupon="10percent">Apply</a>
+                                <a href="#" id="tenpercent" class="btn btn-primary apply-coupon" data-coupon="10percent">Apply</a>
                             </div>
                         </div>
                     </div>
