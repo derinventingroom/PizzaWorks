@@ -62,7 +62,8 @@
                                 <h5 class="card-title">Lunch Special - 15% Off</h5>
                                 <p class="card-text">Get 15% off on any order placed between 12 PM and 3 PM for a delicious midday treat!</p>
                                 <!-- <p class="fw-bold">15% Discount</p> -->
-                                <a href="#" class="btn btn-primary apply-coupon" data-coupon="lunchSpecial">Apply</a>
+                                <div id="lunch-special-available"></div>
+                                <a href="#" id="lunch-button-deals" class="btn btn-primary apply-coupon" data-coupon="lunchSpecial">Apply</a>
                             </div>
                         </div>
                     </div>

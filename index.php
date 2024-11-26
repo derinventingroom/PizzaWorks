@@ -172,7 +172,7 @@
                 <div class="carousel-description-style">
                   <h3 class="fw-bold">Pizza & Salad Combo</h3>
                   <p>Enjoy a large pizza and a fresh salad for only $19.99!</p>
-                  <a href="#" class="btn btn-red btn-primary">Order Now</a>
+                  <a href="#" class="add-to-cart btn btn-red btn-primary" data-name="Pizza & Salad Combo" data-price="19.99">Order Now</a>
                 </div>
               </div>
             </div>
@@ -186,7 +186,8 @@
                 <div class="carousel-description-style">
                   <h3 class="fw-bold">Lunch Special</h3>
                   <p>Any personal pizza and a drink for just $9.99 from 11 AM to 3 PM!</p>
-                  <a href="#" class="btn btn-red btn-primary">Order Now</a>
+                  <div id="lunch-special-available"></div>
+                  <a href="#" id="lunch-button" class="add-to-cart btn btn-red btn-primary" data-name="Lunch Special" data-price="9.99">Order Now</a>
                 </div>
               </div>
             </div>

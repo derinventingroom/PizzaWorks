@@ -370,7 +370,7 @@
                     <p class="fw-bold">5.99</p>
                   </div>
                   <p class="card-text">Fresh, crisp veggies tossed to perfection!</p>
-                  <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
                 </div>
               </div>

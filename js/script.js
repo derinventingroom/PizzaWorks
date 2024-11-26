@@ -6,6 +6,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //Lunch special
+  
+        const lunchMessage = document.getElementById("lunch-special-available");
+        const lunchButton = document.getElementById("lunch-button");
+        const lunchButtonDeals = document.getElementById("lunch-button-deals");
+    
+        // Get the current time
+        const now = new Date();
+        const currentHour = now.getHours();
+    
+        // Lunch special hours: 11 AM to 3 PM
+        const startHour = 11;
+        const endHour = 15; // 3 PM
+    
+        if (currentHour >= startHour && currentHour < endHour) {
+            // Lunch Special is valid
+            if (lunchMessage) lunchMessage.innerHTML = `Lunch special is available`;
+            if (lunchButton) lunchButton.style.display = "block"; // Show lunch button
+            if (lunchButtonDeals) lunchButtonDeals.style.display = "block"; // Show deals button
+        } else {
+            if (lunchMessage) lunchMessage.innerHTML = `Lunch Special is not valid at this time. 😞`;
+            if (lunchButton) lunchButton.style.display = "none"; // Hide lunch button
+            if (lunchButtonDeals) lunchButtonDeals.style.display = "none"; // Hide deals button
+        }
+ 
+    
+   
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     function updateCartDisplay() {
