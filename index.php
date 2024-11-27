@@ -211,12 +211,13 @@
 
   <section class="family-fun-section">
     <div class="row">
-      <img src="images\family-photo-6.jpg" class="img-fluid" alt="">
-      <img src="images\family-photo-2.jpg" class="img-fluid" alt="">
-      <img src="images\family-photo-3.jpg" class="img-fluid" alt="">
-      <img src="images\family-photo-4.jpg" class="img-fluid" alt="">
+      <img src="images\family-photo-7.jpg" class="img-fluid" alt="">
+      <img src="images\family-photo-8.jpg" class="img-fluid" alt="">
+      <img src="images\family-photo-9.jpg" class="img-fluid" alt="">
+      <img src="images\family-photo-10.jpg" class="img-fluid" alt="">
+      <!-- <img src="images\family-photo-4.jpg" class="img-fluid" alt="">
       <img src="images\family-photo-5.jpg" class="img-fluid" alt="">
-      <img src="images\family-photo-1.jpg" class="img-fluid" alt="">
+      <img src="images\family-photo-1.jpg" class="img-fluid" alt=""> -->
     </div>
   </section>
   

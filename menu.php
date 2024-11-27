@@ -304,8 +304,10 @@
                    <p class="fw-bold">$2.99</p>
                   </div>
                   <p class="card-text">Deliciously baked garlic bread.</p>
-                  
+                  <div class="selections option-flex">
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Garlic Bread - 10 ct" data-price="5.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -315,12 +317,23 @@
                 <img src="images/buffalo-wings-menu.jpg" class="card-img-top" alt="Wings">
                 <div class="card-body">
                   <div class="menu-card-header">
-                    <h5 class="card-title">Buffalo Wings</h5>
+                    <h5 class="card-title"Wings</h5>
                     <p class="fw-bold">$7.99</p>
                   </div>
                   <p class="card-text">Spicy wings served with ranch dip.</p>
-                  
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Buffalo Wings - 10 ct" data-price="7.99">Add to Cart</a>
+                  <div class="selections option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <select id="" class="wing-flavor">
+                        <option value="" disabled selected hidden>Wing Kind</option>
+                        <option value="Garlic Parmesan">Garlic Parm</option>
+                        <option value="Honey BBQ">Honey BBQ</option>
+                        <option value="Buffalo Mild">Mild</option>
+                        <option value="Buffalo Medium">Medium</option>
+                        <option value="Buffalo Hot!">Hot!</option>
+                        <option value="Buffalo Smokin Hot!">Smokin Hot!</option>
+                    </select>
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Wings - 10 ct" data-price="7.99">Add to Cart</a>
+                </div>
                 </div>
               </div>
             </div>
@@ -334,7 +347,10 @@
                   <p class="fw-bold">$5.99</p>
                   </div>
                   <p class="card-text">Crispy, tender chicken strips, irresistibly tasty</p>
+                  <div class="selections option-flex">
+                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Strips - 6 ct" data-price="4.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -355,8 +371,10 @@
                   <p class="fw-bold">$5.99</p>
                   </div>
                   <p class="card-text">Fresh greens with Caesar dressing.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Caesar Salad" data-price="5.99">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Caesar Salad" data-price="5.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,8 +388,10 @@
                     <p class="fw-bold">5.99</p>
                   </div>
                   <p class="card-text">Fresh, crisp veggies tossed to perfection!</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Garden Salad" data-price="5.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -385,8 +405,10 @@
                     <p class="fw-bold">$6.99</p>
                   </div>
                   <p class="card-text">Grilled chicken atop crisp garden greens.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Salad" data-price="6.99">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Chicken Salad" data-price="6.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -407,8 +429,10 @@
                     <p class="fw-bold">$3.99</p>
                   </div>
                   <p class="card-text">Warm, sweet squares topped with frosting.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Cinnamon Squares 10 ct" data-price="3.99">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Cinnamon Squares 10 ct" data-price="3.99">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -422,8 +446,10 @@
                     <p class="fw-bold">$3.49</p>
                   </div>
                   <p class="card-text">Rich, fudgy brownies for chocolate lovers.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Browies - 6 ct" data-price="3.49">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Browies - 6 ct" data-price="3.49">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -437,8 +463,10 @@
                     <p class="fw-bold">$2.49</p>
                   </div>
                   <p class="card-text">Soft, buttery cookies loaded with pecans.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Buttery Pecan Cookies - 6 ct" data-price="2.49">Add to Cart</a>
+                  <div class="option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Buttery Pecan Cookies - 6 ct" data-price="2.49">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -459,7 +487,7 @@
                     <p class="fw-bold">$1.99</p>
                   </div>
                   <p class="card-text">Choice of cola, lemon-lime, or root beer.</p>
-                  <div class="soda option-flex">
+                  <div class="selections option-flex">
                   <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <select id="" class="menu-flavor">
                       <option value="" disabled selected hidden>Flavor</option>
@@ -467,8 +495,8 @@
                       <option value="Lemon/Lime Pop">Lemon/Lime</option>
                       <option value="Root Beer">Root Beer</option>
                   </select>
-                </div>
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Soda" data-price="1.99">Add to Cart</a>
+                </div>
                 </div>
               </div>
             </div>
@@ -482,8 +510,10 @@
                     <p class="fw-bold">$2.49</p>
                   </div>
                   <p class="card-text">Refreshing iced tea with lemon.</p>
+                  <div class="soda option-flex">
                   <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
                   <a href="#" class="add-to-cart btn btn-primary" data-name="Iced Tea" data-price="2.49">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -497,8 +527,10 @@
                     <p class="fw-bold">$1.49</p>
                   </div>
                   <p class="card-text">Pure, refreshing bottled water.</p>
-                  <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
-                  <a href="#" class="add-to-cart btn btn-primary" data-name="Bottled Water" data-price="1.49">Add to Cart</a>
+                  <div class="selections option-flex">
+                    <input type="number" id="quantity-margherita" placeholder="Quantity" class="menu-quantity" value="1" min="1">
+                    <a href="#" class="add-to-cart btn btn-primary" data-name="Bottled Water" data-price="1.49">Add to Cart</a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@
                                 <h5 class="card-title">Family Feast Combo - $5 Off</h5>
                                 <p class="card-text">Enjoy $5 off on our Family Feast Combo. Ideal for gatherings and celebrations.</p>
                                 <!-- <p class="fw-bold">$5.00 Off</p> -->
-                                <a href="#" class="btn btn-primary apply-coupon" data-coupon="5off">Apply</a>
+                                <a href="#" id="familyFeastCoupon" class="btn btn-primary apply-coupon" data-coupon="5off">Apply</a>
                             </div>
                         </div>
                     </div>

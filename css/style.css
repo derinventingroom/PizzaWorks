@@ -488,8 +488,7 @@ p{
   margin-bottom: 10px;
 }
 
-.user-options select, .user-options .menu-quantity, .soda.option-flex input, .soda.option-flex select{
-  /* padding: 5px 0 5px 5px; */
+.user-options select, .user-options .menu-quantity, .selections.option-flex input, .selections.option-flex select{
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #679987;
@@ -499,15 +498,23 @@ p{
   display: flex;
   gap: 20px;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .option-flex .menu-quantity{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #679987;
   width: 20%;
 }
 
-.option-flex .menu-size, .soda.option-flex select{
+.option-flex .menu-size{
   width: 100%;
 }
+
+/* .wing-flavor, .wing-flavor option{
+  font-size: 9px !important;
+} */
 
 .card {
     border: none; /* Remove default border */
@@ -645,7 +652,7 @@ p{
 
 .family-fun-section .row{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .family-fun-section img{
@@ -711,6 +718,44 @@ p{
 
 
 /*mobile*/
+@media (min-width: 398px) and (max-width: 1024px) {
+  .hero-buttons{
+    display: block;
+  }
+  .background-image-section{
+    background-size: auto;
+  }
+  .popular-pizzas-section .pizza-icon{
+    display: none;
+    height: 40px;
+  }
+  .carousel-item .row{
+    display: block;
+  }
+
+  .popular-pizzas-section .card{
+    margin-bottom: 50px !important
+  }
+
+  /* .popular-pizza-block-bottom{
+    position:unset;
+  } */
+
+  .popular-pizzas-section .card-title{
+    padding: 10px;
+  }
+
+  .carousel-item h3{
+    font-size: 2rem;
+  }
+  .family-fun-section .row{
+    display: block;
+  }
+  .family-fun-section .row:nth-child(3), .family-fun-section .row:nth-child(4){
+    display: none;
+  }
+}
+
     /* display: block; */
     /* width: auto; */
     /* height: 100%; */
