@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
         if (currentHour >= startHour && currentHour < endHour) {
             // Lunch Special is valid
-            if (lunchMessage) lunchMessage.innerHTML = `Lunch special is available`;
+            //if (lunchMessage) lunchMessage.innerHTML = `Lunch special is available`;
             if (lunchButton) lunchButton.style.display = "block"; // Show lunch button
-            if (lunchButtonDeals) lunchButtonDeals.style.display = "block"; // Show deals button
+            if (lunchButtonDeals) lunchButtonDeals.style.display = "inline-block"; // Show deals button
         } else {
             if (lunchMessage) lunchMessage.innerHTML = `Lunch Special is not valid at this time. 😞`;
             if (lunchButton) lunchButton.style.display = "none"; // Hide lunch button
