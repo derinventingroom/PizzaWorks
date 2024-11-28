@@ -24,15 +24,8 @@
   <section class="background-image-section"></section>
   <section id="popular-pizzas" class="popular-pizzas-section py-5">
     
-    <!-- <div class="section-header-container">
-      <div class="section-header">
-        <h2 class="display-4 fw-bold text-center">Popular Pizzas</h2>
-        <p class="lead text-center">Our most loved pizzas by customers!</p>
-      </div>
-    </div> -->
-  
-      <div class="row">
-       <div class="pop-pizza-header col-md-3">
+   <div class="row">
+       <div class="pop-pizza-header">
           <div class="card mb-lg-0 mb-4">
           <div class="section-header">
             <h2 class="display-4 fw-bold text-center">Popular Pizzas</h2>
@@ -41,21 +34,7 @@
           </div>
         </div>
         
-        <!-- Pizza Card 1 -->
-        <!-- <div class="col-md-3">
-          <div class="card mb-lg-0 mb-4">
-            <div class="popular-pizza-block">
-              <h5 class="card-title">Margherita Pizza</h5>
-              <img src="images/Margherita-Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
-              <div class="popular-pizza-block-bottom">
-                <p class="card-text">Classic cheese pizza with fresh basil.</p>
-                <a href="#" class="yellow-bg btn btn-primary">Order Now</a>
-              </div>
-             </div>
-            </div>
-         </div> -->
-         
-         <div class="col-md-3"> 
+        <div class="py-5"> 
          <a href="#" class="add-to-cart card-link" data-name="Margherita Pizza" data-price="12.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
@@ -77,13 +56,12 @@
             </div>
              </div>
             </a>
-            <!-- <a href="#" class="add-to-cart btn-red btn btn-primary" data-name="Margherita Pizza" data-price="12.99">Order Now</a> -->
         </div>
          
   
         <!-- Pizza Card 2 -->
          
-        <div class="col-md-3">
+        <div class="py-5">
         <a href="#" class="add-to-cart card-link" data-name="Pepperoni Pizza" data-price="14.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
@@ -109,7 +87,7 @@
         </div>
   
         <!-- Pizza Card 3 -->
-        <div class="col-md-3">
+        <div class="py-5">
         <a href="#" class="add-to-cart card-link" data-name="Veggie Pizza" data-price="13.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">  

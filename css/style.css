@@ -283,6 +283,8 @@ p{
 
   .popular-pizzas-section .row{
     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .popular-pizzas-section .card{
@@ -718,6 +720,36 @@ p{
 
 
 /*mobile*/
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .popular-pizzas-section .row{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .menu-section .menu-row img{
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .customize-block .menu-row{
+    display: block;
+  }
+  .menu-section .menu-row img{
+    max-width: 100%;
+  }
+  .customize-block .card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
 @media (min-width: 398px) and (max-width: 1024px) {
   .hero-buttons{
     display: block;
@@ -737,9 +769,12 @@ p{
     margin-bottom: 50px !important
   }
 
-  /* .popular-pizza-block-bottom{
-    position:unset;
-  } */
+  .popular-pizzas-section .row{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 
   .popular-pizzas-section .card-title{
     padding: 10px;
@@ -755,6 +790,8 @@ p{
     display: none;
   }
 }
+
+
 
     /* display: block; */
     /* width: auto; */
