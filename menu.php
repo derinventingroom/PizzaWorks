@@ -3,7 +3,7 @@
     <div class="container">
       <!-- <h2 class="display-4 fw-bold text-center">Our Menu</h2> -->
       
-      <div class="row">
+      <div class="row" id="pizzas">
         <!-- Pizza Category -->
         <div class="col-md-12">
           <h3 class="my-4">Pizzas</h3>
@@ -24,6 +24,7 @@
                         <label for="pizza-selection" class="form-label">Select Your Pizza:</label>
                         <select id="pizza-selection" class="form-select" required>
                             <option value="">Choose a pizza...</option>
+                            <option value="cheese">Cheese</option>
                             <option value="margherita">Margherita</option>
                             <option value="pepperoni">Pepperoni</option>
                             <option value="vegetarian">Vegetarian</option>
@@ -291,7 +292,7 @@
         </div>
   
         <!-- Sides Category -->
-        <div class="col-md-12">
+        <div class="col-md-12" id="sides">
           <h3 class="my-4">Sides</h3>
           <div class="row">
             <!-- Side Item 1 -->
@@ -358,7 +359,7 @@
         </div>
 
         <!-- Salads Category -->
-        <div class="col-md-12">
+        <div class="col-md-12" id="salads">
           <h3 class="my-4">Salads</h3>
           <div class="row">
             <!-- Salad Item 1 -->
@@ -416,7 +417,7 @@
         </div>
 
           <!-- Desserts Category -->
-          <div class="col-md-12">
+          <div class="col-md-12" id="dessert">
           <h3 class="my-4">Desserts</h3>
           <div class="row">
             <!-- Dessert Item 1 -->
@@ -474,7 +475,7 @@
         </div>
   
         <!-- Drinks Category -->
-        <div class="col-md-12">
+        <div class="col-md-12" id="drinks">
           <h3 class="my-4">Drinks</h3>
           <div class="row">
             <!-- Drink Item 1 -->

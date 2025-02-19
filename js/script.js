@@ -284,6 +284,18 @@ document.addEventListener("DOMContentLoaded", () => {
             if (document.getElementById('cart-items')) {
                 updateCartDisplay();
             }
+
+            
+                let checkoutBtn = document.getElementById("checkout-btn"); // Ensure the button exists
+                let cartItems = JSON.parse(localStorage.getItem("cart")) || []; // Get cart data
+            
+                if (checkoutBtn) {
+                    checkoutBtn.addEventListener("click", function () {
+                        sessionStorage.setItem("checkoutCart", JSON.stringify(cartItems)); // Store cart items in session
+                        localStorage.removeItem("cart"); // Clear cart after storing checkout data
+                    });
+                }
+          
 });
 
 

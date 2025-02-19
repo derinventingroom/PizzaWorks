@@ -17,8 +17,11 @@
           </a>
       
           <!-- Navbar toggle for smaller screens -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
       
           <!-- Links on the right -->
@@ -28,13 +31,22 @@
                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.php">Menu</a>
+                <a class="nav-link" href="menu.php#pizzas">Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.php#sides">Sides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.php#salads">Salads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.php#dessert">Desserts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.php#drinks">Drinks</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="coupons.php">Deals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.php">Web Project Disclaimer</a>
               </li>
               <li class="nav-item cart">
                 <a href="cart.php" class="btn btn-outline-secondary">

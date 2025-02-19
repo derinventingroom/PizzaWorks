@@ -34,7 +34,7 @@
           </div>
         </div>
         
-        <div class="py-5"> 
+        <div class=""> 
          <a href="#" class="add-to-cart card-link" data-name="Margherita Pizza" data-price="12.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
@@ -61,7 +61,7 @@
   
         <!-- Pizza Card 2 -->
          
-        <div class="py-5">
+        <div class="">
         <a href="#" class="add-to-cart card-link" data-name="Pepperoni Pizza" data-price="14.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">   
@@ -87,7 +87,7 @@
         </div>
   
         <!-- Pizza Card 3 -->
-        <div class="py-5">
+        <div class="">
         <a href="#" class="add-to-cart card-link" data-name="Veggie Pizza" data-price="13.99">
           <div class="card mb-lg-0 mb-4">
             <div class="popular-pizza-block">  

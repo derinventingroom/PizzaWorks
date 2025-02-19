@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .badge, .fa-shopping-cart{
   color: #5a826d !important;
 }
@@ -9,8 +13,32 @@
   color: #fff !important;
 }
 
-/* Global */
+.checkout-section{
+  border-bottom: 10px solid #a1363a;
+}
 
+.checkout-section .checkout-links{
+  display: flex;
+  gap: 24px;
+}
+
+.checkout-section a{
+  text-decoration: none !important;
+  color: #63816e;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.checkout-section h3{
+  color: #63816e;
+  font-family: "peachy-keen-jf", sans-serif;
+}
+
+.checkout-section p{
+  font-size: 22px;
+}
+
+/* Global */
 
 p{
   font-family: "open-sans", sans-serif;
@@ -67,39 +95,20 @@ p{
 .section-header-container{
   display: flex;
   justify-content: center;
-  /* margin-top: -9%; */
 }
-
-/* .section-header{
-  background-color: #e70e02;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 80%;
-  padding: 30px;
-  color: #fff;
-  border-radius: 20px;
-} */
-
-/* .navbar {
-  color: #000000;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar a {
-  color: #000000;
-}
-
-.navbar a:hover {
-  color: #ffbf46 !important;
-} */
 
 .navbar{
   border-bottom: 3px solid #63816e;
-  /* border-top: 5px solid #63816e; */
+}
+
+.nav-link, .nav-link.active{
+  font-weight: 700;
+  color: #63816e !important;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus{
+  font-weight: 700;
+  color: #a2373b !important;
 }
 
 .navbar-home {
@@ -119,6 +128,39 @@ p{
   color: #ffbf46 !important;
 }
 
+.custom-toggler {
+  border: 3px solid  #63816e;
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  width: 40px; 
+  height: 30px;
+}
+
+/* Style the individual lines */
+.custom-toggler span {
+  display: block;
+  width: 100%; 
+  height: 2px;
+  background-color: #63816e; 
+  border-radius: 2px; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-toggler:hover span {
+  background-color: #63816e;
+}
+
+
+.custom-toggler:focus, .custom-toggler:active{
+  outline: none !important;
+  box-shadow: unset !important;
+  border: 3px solid  #63816e !important;
+}
+
 
 /* HERO */
 .hero-section {
@@ -136,11 +178,6 @@ p{
   justify-content: center;
   margin-bottom: 40px;
 }
-  
-  .hero-image {
-    /* border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
- }
 
   .hero-section h1{
     color: #42846d !important;
@@ -196,10 +233,13 @@ p{
     border-top: 10px solid #a1363a;
     border-bottom: 10px solid #a1363a;
   }
-  
-  .carousel-item {
-    /* min-height: 400px;  */
-    /* Set a minimum height for the carousel */
+
+  .carousel-control-next-icon{
+    margin-left: 25%;
+  }
+
+  .carousel-control-prev-icon{
+    margin-left: -25%;
   }
 
   .carousel-item h3{
@@ -223,9 +263,9 @@ p{
   }
   
   .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
-    padding: 20px; /* Padding around caption */
-    border-radius: 5px; /* Rounded corners for caption */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px; 
+    border-radius: 5px; 
   }
   .carousel-bg-image-1, .carousel-bg-image-2, .carousel-bg-image-3{
     background-size: cover;
@@ -248,20 +288,8 @@ p{
     justify-content: center;
     align-items: center;
     background-color: #42846d;
-    /* background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-image: url('../images/carousel-bg-graphic-smaller.jpg'); 
-    min-height: 10vh;
-    padding: 30px 0; */
   }
 
-  .card-title{
-    /* background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-image: url('../images/1x/test.png');  */
-  }
 
   .carousel-description .carousel-description-style{
     display: flex;
@@ -271,8 +299,8 @@ p{
   }
 
   .carousel-item img {
-    object-fit: cover; /* Ensure the image fills its area */
-    height: 100%; /* Make sure it takes up the full height of the container */
+    object-fit: cover; 
+    height: 100%; 
   }
 
   .popular-pizzas-section {
@@ -292,26 +320,12 @@ p{
   }
   
   .card {
-    border: none; /* Remove default border */
-    transition: transform 0.2s; /* Smooth scaling effect */
-  }
-  
-  .card:hover {
-    /* transform: scale(1.05);  */
+    border: none;
+    transition: transform 0.2s; 
   }
   
   .card-img-top {
-    border-radius: 10px; /* Rounded corners for the image */
-  }
-
-  .popular-pizzas-section .card-title{
-    /* position: absolute;
-    font-family: "interstate-condensed", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    z-index: 1; */
-    /* text-align: center;
-    width: 100%; */
+    border-radius: 10px; 
   }
 
   .popular-pizzas-section .card-title{
@@ -339,20 +353,7 @@ p{
     position: relative;
     border-radius: 15px;
     border: 4px solid #42846d;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
   }
-
-  /* .popular-pizza-block-bottom{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #ffbf46;
-    border-top: 4px solid #000;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 20px;
-  } */
 
   .popular-pizza-block-bottom{
     position: absolute;
@@ -369,8 +370,6 @@ p{
   }
 
   .popular-pizza-block-bottom .fa-pizza-slice{
-    /* color: #ffffff;
-    transform: rotate(230deg); */
     color: #000;
     background-color: #ffffff;
     border-radius: 100%;
@@ -408,7 +407,7 @@ p{
 
   /**MENU */
   .menu-section {
-    background-color: #fef7ea; /* Light background */
+    background-color: #fef7ea; 
     border-bottom: 10px solid #a1363a;
   }
 
@@ -425,6 +424,14 @@ p{
     max-width: 30%;
     height: max-content;
   }
+
+.customize-block form{
+  max-height: max-content;
+}
+
+.customize-block .form-control{
+  margin-bottom: 20px;
+}
 
 .menu-section .add-to-cart, .menu-section .customize-block .btn{
   border-radius: 30px !important;
@@ -447,7 +454,6 @@ p{
   transition: transform 0.2s;
   border: 2px solid #5a826d;
   border-radius: 12px;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
 }
 
 .menu-section form {
@@ -458,7 +464,7 @@ p{
 }
 
 .menu-section form.form-open {
-  max-height: 500px; /* Adjust to fit your form's content height */
+  max-height: 500px; 
   opacity: 1;
 }
 
@@ -514,22 +520,13 @@ p{
   width: 100%;
 }
 
-/* .wing-flavor, .wing-flavor option{
-  font-size: 9px !important;
-} */
-
 .card {
-    border: none; /* Remove default border */
-    transition: transform 0.2s; /* Smooth scaling effect */
+    border: none; 
+    transition: transform 0.2s; 
   }
-  
-  .card:hover {
-    /* transform: scale(1.05);  */
-    /* Slightly enlarge card on hover */
-  }
-  
+
   .card-img-top {
-    border-radius: 10px; /* Rounded corners for the image */
+    border-radius: 10px; 
   }
 
   /* Cart */
@@ -546,7 +543,6 @@ p{
 
   .cart-item-style p{
     font-weight: 600;
-    /* font-size: 20px; */
   }
 
   .cart-item-style .remove-item{
@@ -602,6 +598,7 @@ p{
   /* Coupon Section */
   .coupon-section{
     background-color: #fef7ea !important;
+    border-bottom: 10px solid #a1363a;
   }
 
   .coupon-section .card{
@@ -632,7 +629,6 @@ p{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    /* color: #fff; */
   }
 
   .coupon-section .coupon-button{
@@ -685,16 +681,8 @@ p{
   }
 
   footer .footer-list{
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
     margin-top: 40px;
     list-style: none;
-    /* max-width: 1400px;
-    margin: auto;
-    position: relative;
-    left: -1.5%;
-    min-height: 20vh; */
   }
 
   .footer-caption{
@@ -727,6 +715,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -750,6 +739,25 @@ p{
   }
 }
 
+@media (min-width: 992px) and (max-width: 1119px) {
+  .footer-logo-block img:nth-child(2){
+    width: 300px;
+  }
+}
+
+@media (min-width: 398px) and (max-width: 516px) {
+  .cart-item-style{
+    display: block;
+    position: relative;
+  }
+
+  .remove-item{
+    position: absolute;
+    top: 0;
+    left: 91.2%;
+  }
+}
+
 @media (min-width: 398px) and (max-width: 1024px) {
   .hero-buttons{
     display: block;
@@ -770,7 +778,7 @@ p{
   }
 
   .popular-pizzas-section .row{
-    padding: 50px;
+    /* padding: 50px; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -789,13 +797,19 @@ p{
   .family-fun-section .row:nth-child(3), .family-fun-section .row:nth-child(4){
     display: none;
   }
+
+  .option-flex{
+    flex-direction: column;
+  }
+
+  .coupon-section .coupon-block .card{
+    flex-direction: column !important;
+  }
+
+  .coupon-section .coupon-block .card img{
+    max-width: fit-content;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
 }
-
-
-
-    /* display: block; */
-    /* width: auto; */
-    /* height: 100%; */
-    /* max-height: 200px; */
-    /* overflow: hidden;
-    object-fit: cover; */

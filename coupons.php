@@ -5,7 +5,7 @@
         <p>Browse and apply discount coupons to save on your order!</p>
         
         <div id="coupons-list" class="row mt-4">
-            <div class="col-md-12">
+            <div class="coupon-block col-md-12">
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <div class="card">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="coupon-block col-md-12">
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <div class="card">
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="coupon-block col-md-12">
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <div class="card">
@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="coupon-block col-md-12">
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <div class="card">
